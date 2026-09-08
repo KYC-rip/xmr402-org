@@ -114,7 +114,8 @@ export function BlogPost() {
 
   useEffect(() => {
     if (!params?.slug) return
-    fetch(`/api/blog/${params.slug}`)
+    const cleanSlug = params.slug.replace(/\.md$/, '')
+    fetch(`/api/blog/${cleanSlug}`)
       .then((res) => {
         if (!res.ok) throw new Error('Not found')
         return res.json()

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build:sitemap": "npx tsx scripts/generate-sitemap.ts",
-    "build": "npm run build:sitemap && tsc -b && vite build",
+    "build:markdown": "npx tsx scripts/generate-markdown.ts",
+    "build": "npm run build:sitemap && npm run build:markdown && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "npm run build && wrangler pages deploy dist --project-name xmr402-org --branch main",

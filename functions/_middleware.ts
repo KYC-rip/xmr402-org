@@ -657,10 +657,11 @@ Because XMR402 operates on an anonymous, stateless model, agents do not provisio
     });
   }
 
-  // 2. MARKDOWN CONTENT NEGOTIATION (Accept: text/markdown)
-  if (wantsMarkdown) {
+  // 2. MARKDOWN CONTENT NEGOTIATION (Accept: text/markdown or direct .md URL)
+  const isDirectMd = path.endsWith('.md');
+  if (wantsMarkdown || isDirectMd) {
     // A) Blog Post in Markdown
-    const postMatch = path.match(/^(?:\/(en|zh-TW|ru|es|pt|ja))?\/blog\/([a-z0-9-]+)\/?$/);
+    const postMatch = path.match(/^(?:\/(en|zh-TW|ru|es|pt|ja))?\/blog\/([a-z0-9-]+)(?:\.md)?\/?$/);
     if (postMatch) {
       const lang = (postMatch[1] as SupportedLang) ?? 'en';
       const slug = postMatch[2];
@@ -673,11 +674,20 @@ Because XMR402 operates on an anonymous, stateless model, agents do not provisio
 
         const md = `# ${title}\n\n> ${desc}\n\n- **Author:** ${post.author}\n- **Date:** ${post.date.split('T')[0]}\n- **Tags:** ${tags}\n- **Canonical:** https://xmr402.org/blog/${slug}\n\n---\n\n${body}\n`;
         return markdownResponse(md);
+      } else if (isDirectMd) {
+        return new Response(`# 404 Not Found\n\nBlog post "${slug}" was not found.`, {
+          status: 404,
+          headers: {
+            'Content-Type': 'text/markdown; charset=utf-8',
+            'Cache-Control': 'no-cache',
+            'Access-Control-Allow-Origin': '*',
+          },
+        });
       }
     }
 
     // B) Blog Index in Markdown
-    const listMatch = path.match(/^(?:\/(en|zh-TW|ru|es|pt|ja))?\/blog\/?$/);
+    const listMatch = path.match(/^(?:\/(en|zh-TW|ru|es|pt|ja))?\/blog(?:\.md)?\/?$/);
     if (listMatch) {
       const lang = (listMatch[1] as SupportedLang) ?? 'en';
       const index: BlogPostMeta[] = (await context.env.BLOG_KV.get('posts:index', 'json')) ?? [];
@@ -692,8 +702,8 @@ Because XMR402 operates on an anonymous, stateless model, agents do not provisio
     }
 
     // C) Homepage in Markdown
-    const homeMatch = path.match(/^(?:\/(en|zh-TW|ru|es|pt|ja))?\/?$/);
-    if (homeMatch) {
+    const homeMatch = path.match(/^(?:\/(en|zh-TW|ru|es|pt|ja))?(?:\/(?:index|home))?(?:\.md)?\/?$/);
+    if ((isDirectMd && (path === '/index.md' || path === '/home.md')) || (wantsMarkdown && homeMatch)) {
       const md = `# XMR402: The Stateless, Anonymous Payment Primitive for the Machine Economy\n\n> XMR402 (https://xmr402.org) is the open, neutral payment protocol for autonomous AI agents, APIs, and P2P relays. It implements the IETF HTTP 402 Payment Required standard powered by Monero (XMR) transaction proofs (TX Proofs) with zero accounts, zero protocol fees, and sub-200ms verification.\n\n## Core Protocol Specification\n\n1. Client requests a protected resource (e.g. \`GET /intel\`).\n2. Server responds with HTTP 402 and a challenge header:\n   \`WWW-Authenticate: XMR402 address="8...", amount="1000", message="nonce_hmac", timestamp="1772937600"\`\n3. Client pays Monero atomic units and derives a cryptographic transaction proof (\`get_tx_proof\`).\n4. Client retries with proof header:\n   \`Authorization: XMR402 txid="<hash>", proof="<signature>"\`\n5. Server verifies proof statelessly using Monero node RPC \`check_tx_proof\` (~200ms) and grants access.\n\n## Links & Endpoints\n\n- Full Knowledge Base: https://xmr402.org/llms-full.txt\n- Live Sandbox: https://demo-api.xmr402.org/intel\n- Agent Discovery: https://xmr402.org/.well-known/agents.json\n- Whitepaper: https://xmr402.org/XMR402_Whitepaper.pdf\n`;
       return markdownResponse(md);
     }
@@ -795,6 +805,7 @@ Because XMR402 operates on an anonymous, stateless model, agents do not provisio
   <meta name="author" content="${escapeHtml(post.author)}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="${canonicalUrl}">
+  <link rel="alternate" type="text/markdown" href="${canonicalUrl}.md">
   ${hreflangTags}
   <!-- Open Graph -->
   <meta property="og:site_name" content="XMR402">
