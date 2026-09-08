@@ -25,9 +25,9 @@
         "required": true,
         "params": {
           "roles": [
-            "merchant",
-            "payment-processor"
-          ]
+            "merchant"
+          ],
+          "role": "merchant"
         }
       }
     ]
@@ -46,9 +46,9 @@
       "required": true,
       "params": {
         "roles": [
-          "merchant",
-          "payment-processor"
-        ]
+          "merchant"
+        ],
+        "role": "merchant"
       }
     }
   ]

@@ -552,9 +552,71 @@ Because XMR402 operates on an anonymous, stateless model, agents do not provisio
     });
   }
 
+  if (path === '/.well-known/agent-card.json') {
+    const card = {
+      name: 'XMR402 Payment Gateway Agent',
+      version: '2.0.0',
+      description: 'Stateless, anonymous HTTP 402 Monero payment gateway for autonomous AI agents.',
+      supportedInterfaces: [
+        {
+          url: 'https://demo-api.xmr402.org/intel',
+          protocol: 'HTTP/1.1',
+          auth: 'XMR402',
+        },
+        {
+          url: 'wss://demo-api.xmr402.org/relay',
+          protocol: 'WebSocket',
+          auth: 'XMR402',
+        },
+      ],
+      capabilities: {
+        streaming: true,
+        stateless_validation: true,
+        zero_confirmation: true,
+        extensions: [
+          {
+            uri: 'https://github.com/google-agentic-commerce/AP2/tree/v0.1.0',
+            description: 'Agent Payments Protocol for cryptographically-signed payment mandates',
+            required: true,
+            params: {
+              roles: ['merchant'],
+              role: 'merchant',
+            },
+          },
+        ],
+      },
+      skills: [
+        {
+          id: 'xmr402-payment-challenge',
+          name: 'XMR402 Challenge Handler',
+          description: 'Fulfills HTTP 402 Monero payment challenges via 0-conf TX Proof',
+        },
+      ],
+      extensions: [
+        {
+          uri: 'https://github.com/google-agentic-commerce/AP2/tree/v0.1.0',
+          description: 'Agent Payments Protocol for cryptographically-signed payment mandates',
+          required: true,
+          params: {
+            roles: ['merchant'],
+            role: 'merchant',
+          },
+        },
+      ],
+    };
+    return new Response(JSON.stringify(card, null, 2), {
+      status: 200,
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8',
+        'Cache-Control': 'public, max-age=3600',
+        'Access-Control-Allow-Origin': '*',
+      },
+    });
+  }
+
   // 1.5. x402 PAYMENT PROTOCOL MIDDLEWARE (HTTP 402 for /api and /api/v1)
   if (path === '/api' || path === '/api/' || path === '/api/v1' || path === '/api/v1/') {
-    const challengeHeader = 'XMR402 address="82txTMTFiXihfBeJL5E6keb1p8pzGhdAMb1u6dwnCu66hBgP8orJSKAMuAMjg5HkaTaSTRUVDHo67WAv3FFjt4CW73b8scF", amount="1000", message="nonce_x402_challenge", timestamp="1772937600"';
+    const x402Challenge = 'x402 address="82txTMTFiXihfBeJL5E6keb1p8pzGhdAMb1u6dwnCu66hBgP8orJSKAMuAMjg5HkaTaSTRUVDHo67WAv3FFjt4CW73b8scF", amount="1000", message="nonce_x402_challenge", timestamp="1772937600", token="USDC", network="base"';
     const paymentRequiredObj = {
       x402Version: 1,
       version: '1.0',
@@ -577,13 +639,13 @@ Because XMR402 operates on an anonymous, stateless model, agents do not provisio
       payment_url: 'https://demo-api.xmr402.org/intel',
       error: 'Payment Required',
       message: 'x402 payment protocol challenge issued. Pay Monero atomic units and provide tx proof.',
-      challenge: challengeHeader,
+      challenge: x402Challenge,
     };
     return new Response(JSON.stringify(x402Response, null, 2), {
       status: 402,
       headers: {
         'Content-Type': 'application/json; charset=utf-8',
-        'WWW-Authenticate': challengeHeader,
+        'WWW-Authenticate': x402Challenge,
         'Payment-Required': b64,
         'PAYMENT-REQUIRED': b64,
         'x-payment-required': b64,
