@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="The Refill Problem — XMR402 agent funding without exchanges">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="55%" stop-color="#0d0d14"/>
+      <stop offset="100%" stop-color="#120c06"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ff9b3d" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#ff6600" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff6600" stop-opacity="0.15"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ff6600" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ff6600" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <pattern id="fineGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M8 0H0V8" fill="none" stroke="#ff6600" stroke-opacity="0.04" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#fineGrid)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <ellipse cx="930" cy="330" rx="420" ry="330" fill="url(#glow)"/>
+
+  <!-- top rule + kicker -->
+  <rect x="72" y="72" width="58" height="3" fill="#ff6600"/>
+  <text x="146" y="80" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="4" fill="#ff8c33">XMR402 · AGENT TREASURY</text>
+
+  <!-- headline -->
+  <text x="72" y="176" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="66" font-weight="700" fill="#f5f5f7">The Refill Problem</text>
+  <text x="72" y="240" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="30" font-weight="500" fill="#a9a9b6">Funding an agent when no exchange</text>
+  <text x="72" y="282" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="30" font-weight="500" fill="#a9a9b6">will list its money</text>
+
+  <!-- battery / balance gauge -->
+  <g transform="translate(72,340)">
+    <rect x="0" y="0" width="330" height="72" rx="10" fill="none" stroke="#ff6600" stroke-opacity="0.55" stroke-width="2"/>
+    <rect x="330" y="24" width="12" height="24" rx="3" fill="#ff6600" fill-opacity="0.55"/>
+    <rect x="10" y="10" width="64" height="52" rx="5" fill="url(#fill)"/>
+    <rect x="82" y="10" width="64" height="52" rx="5" fill="url(#fill)" fill-opacity="0.45"/>
+    <rect x="154" y="10" width="64" height="52" rx="5" fill="#ff6600" fill-opacity="0.14"/>
+    <rect x="226" y="10" width="64" height="52" rx="5" fill="#ff6600" fill-opacity="0.14"/>
+    <text x="0" y="102" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" fill="#8a8a98">balance 0.031 XMR · floor 0.05 · refill</text>
+  </g>
+
+  <!-- flow line -->
+  <g transform="translate(72,486)">
+    <path d="M0 0 H1056" stroke="url(#flow)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="6" fill="#ff6600"/>
+    <circle cx="352" cy="0" r="6" fill="#ff6600"/>
+    <circle cx="704" cy="0" r="6" fill="#ff6600"/>
+    <circle cx="1056" cy="0" r="6" fill="#ff6600"/>
+    <text x="-4" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#9a9aa8">TREASURY</text>
+    <text x="316" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#9a9aa8">NATIVE SWAP</text>
+    <text x="668" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#9a9aa8">SUBADDRESS</text>
+    <text x="982" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#9a9aa8">200 OK</text>
+  </g>
+
+  <!-- right panel: routes -->
+  <g transform="translate(700,120)" opacity="0.96">
+    <rect x="0" y="0" width="428" height="322" rx="16" fill="#0f0f17" stroke="#ff6600" stroke-opacity="0.22" stroke-width="1.5"/>
+    <text x="26" y="44" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="2" fill="#ff8c33">REFILL ROUTES</text>
+    <line x1="26" y1="60" x2="402" y2="60" stroke="#ff6600" stroke-opacity="0.18"/>
+
+    <g font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="19" fill="#dcdce4">
+      <text x="26" y="100">THORChain 3.20 native</text>
+      <text x="26" y="146">BTC ↔ XMR atomic swap</text>
+      <text x="26" y="192">Haveno P2P escrow</text>
+      <text x="26" y="238">Mining</text>
+      <text x="26" y="284">Earned XMR402 revenue</text>
+    </g>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#ff6600" text-anchor="end">
+      <text x="402" y="100">NO KYC</text>
+      <text x="402" y="146">NO KYC</text>
+      <text x="402" y="192">NO KYC</text>
+      <text x="402" y="238">NO VENUE</text>
+      <text x="402" y="284">NO SWAP</text>
+    </g>
+    <g fill="#ff6600" fill-opacity="0.5">
+      <rect x="26" y="112" width="376" height="1"/>
+      <rect x="26" y="158" width="376" height="1"/>
+      <rect x="26" y="204" width="376" height="1"/>
+      <rect x="26" y="250" width="376" height="1"/>
+    </g>
+  </g>
+
+  <!-- footer -->
+  <line x1="72" y1="558" x2="1128" y2="558" stroke="#ff6600" stroke-opacity="0.18"/>
+  <text x="72" y="592" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#6f6f7d">xmr402.org</text>
+  <text x="1128" y="592" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#6f6f7d">THORCHAIN 3.20 · 2026-08-25</text>
+</svg>

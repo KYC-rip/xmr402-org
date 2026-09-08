@@ -251,5 +251,15 @@
     "error_ws_json": "Frame JSON inválido recebido.",
     "frame_send": ">> ENVIAR: ",
     "frame_recv": "<< RECEBER: "
+  },
+  "seo": {
+    "home_title": "XMR402 | O Padrão Tático para Pagamentos Nativos de IA",
+    "home_description": "O XMR402 é um padrão aberto e neutro para pagamentos nativos da internet. Capacita microtransações agênticas com zero atrito e máxima privacidade.",
+    "ecosystem_title": "Ecossistema | Protocolo XMR402",
+    "ecosystem_description": "Explore o ecossistema de ferramentas, guards, gateways e habilidades de agentes de IA construídos no padrão de pagamento XMR402.",
+    "donate_title": "Doe e Apoie | Protocolo XMR402",
+    "donate_description": "Apoie o desenvolvimento de código aberto do XMR402 e a infraestrutura soberana para a economia de máquinas autônomas.",
+    "blog_title": "Transmissões e Pesquisa | Blog XMR402",
+    "blog_description": "Artigos técnicos, análises de protocolo e pesquisa sobre pagamentos de agentes autônomos e liquidações 0-conf em Monero."
   }
 }

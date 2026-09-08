@@ -1,0 +1,13 @@
+{
+  "resource": "https://xmr402.org",
+  "authorization_servers": [
+    "https://xmr402.org"
+  ],
+  "scopes_supported": [
+    "read:intel",
+    "stream:relay"
+  ],
+  "bearer_methods_supported": [
+    "header"
+  ]
+}

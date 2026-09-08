@@ -1,0 +1,42 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "XMR402 Protocol",
+    "identifier": "did:web:xmr402.org"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:xmr402.org:mcp:server",
+      "displayName": "XMR402 MCP Server",
+      "type": "application/mcp-server-card+json",
+      "url": "https://xmr402.org/.well-known/mcp/server-card.json",
+      "representativeQueries": [
+        "access anonymous paywalled intelligence streams",
+        "fetch real-time monero payment challenges",
+        "verify zero confirmation monero transaction proofs"
+      ]
+    },
+    {
+      "identifier": "urn:air:xmr402.org:agent:gateway",
+      "displayName": "XMR402 Payment Gateway Agent",
+      "type": "application/json",
+      "url": "https://xmr402.org/.well-known/agent-card.json",
+      "representativeQueries": [
+        "autonomous agent to agent settlement",
+        "settle monero tx proofs without KYC accounts",
+        "request machine payable resource challenge"
+      ]
+    },
+    {
+      "identifier": "urn:air:xmr402.org:api:intel",
+      "displayName": "XMR402 Intelligence API",
+      "type": "application/linkset+json",
+      "url": "https://xmr402.org/.well-known/api-catalog",
+      "representativeQueries": [
+        "inspect machine payable http 402 specifications",
+        "query private paywall intelligence feeds",
+        "rfc 9727 api catalog for monero payments"
+      ]
+    }
+  ]
+}

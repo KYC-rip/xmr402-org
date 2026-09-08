@@ -1,0 +1,285 @@
+# XMR402 Full Specification and Knowledge Base
+# Version: 2.0 (Standardized)
+# Domain: https://xmr402.org
+# Author: @xbtoshi / Ripley Architecture
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+1. EXECUTIVE SUMMARY & PHILOSOPHY
+2. CORE PROTOCOL SPECIFICATION (HTTP 402 FLOW)
+3. WEBSOCKET & RELAY SPECIFICATION (P2P FLOW)
+4. CRYPTOGRAPHIC PRIMITIVES & THREAT MODEL
+5. COMPARISON MATRIX: AGENTIC PAYMENT PROTOCOLS
+6. REFERENCE IMPLEMENTATIONS & SDK CODE
+7. RESEARCH TRANSMISSIONS & ARCHITECTURAL PAPERS (21 MONOGRAPHS)
+8. API ENDPOINTS & MACHINE INTEGRATION
+9. THE RIPLEY ECOSYSTEM & NETWORK SITES
+
+================================================================================
+1. EXECUTIVE SUMMARY & PHILOSOPHY
+================================================================================
+The machine economy requires a payment rail fundamentally different from human commerce:
+- Machines cannot possess government IDs, pass biometrics, or pass KYC checks.
+- Machines require sub-second settlement (<200ms) to prevent inference stalls.
+- Machines making high-frequency micro-payments cannot afford base-layer or L2 gas overheads that exceed transaction values.
+- Transparent blockchain ledgers expose an autonomous agent's entire behavioral map, counterparties, willingness-to-pay profile, and prompt strategy to competitors and surveillance intermediaries.
+
+XMR402 solves this by uniting the reserved HTTP status code 402 ("Payment Required") with Monero's native Transaction Proof (`check_tx_proof`) primitive. It is 100% stateless: the server requires no database, generates no custodial accounts, and performs no address reuse tracking. Verification is pure mathematics and 0-confirmation mempool validation.
+
+================================================================================
+2. CORE PROTOCOL SPECIFICATION (HTTP 402 FLOW)
+================================================================================
+When a client (human or autonomous AI agent) requests a protected resource, the server intercepts the request and executes the following deterministic handshake:
+
+PHASE 1: CLIENT INITIAL REQUEST
+Client requests resource:
+```http
+POST /api/v1/inference HTTP/1.1
+Host: api.provider.org
+Content-Type: application/json
+
+{"prompt": "Analyze market order book depth", "tokens": 512}
+```
+
+PHASE 2: SERVER CHALLENGE (HTTP 402)
+The server Guard calculates a stateless intent-bound nonce and responds:
+```http
+HTTP/1.1 402 Payment Required
+WWW-Authenticate: XMR402 address="888tNkZrPN6JsEGGkjMnAZwMW928mgAQDrU1ggvfVnvXBFPruqoc8p5", amount="100000000", message="a4f91b7d8c02e1...", timestamp="1772937600"
+Content-Type: application/json
+
+{
+  "error": "Payment Required",
+  "protocol": "XMR402",
+  "version": "2.0",
+  "amount_atomic": "100000000",
+  "currency": "XMR",
+  "address": "888tNkZrPN6JsEGGkjMnAZwMW928mgAQDrU1ggvfVnvXBFPruqoc8p5",
+  "nonce": "a4f91b7d8c02e1...",
+  "timestamp": 1772937600,
+  "expires_in_seconds": 120
+}
+```
+
+Parameters in WWW-Authenticate:
+- `address`: Receiving Monero primary address or subaddress.
+- `amount`: Payment required in atomic units (piconeros: 1 XMR = 1e12 atomic units).
+- `message`: Cryptographic nonce binding the request method, path, timestamp, and payload hash.
+- `timestamp`: Unix epoch timestamp of challenge creation.
+
+PHASE 3: CLIENT PAYMENT EXECUTION
+The client's wallet transfers the requested atomic units to `address` and requests a transaction proof signature for `message`:
+Monero Wallet RPC:
+`get_tx_proof(txid, address, message)` -> returns unforgeable cryptographic signature `proof_signature`.
+
+PHASE 4: CLIENT AUTHORIZED RETRY
+Client immediately re-issues the original HTTP request with the proof credential:
+```http
+POST /api/v1/inference HTTP/1.1
+Host: api.provider.org
+Content-Type: application/json
+Authorization: XMR402 txid="f5a7e9...", proof="ProofV2...signature..."
+
+{"prompt": "Analyze market order book depth", "tokens": 512}
+```
+
+PHASE 5: SERVER STATELESS VALIDATION
+The server Guard executes:
+1. Replay & Time Window Check: Verify `current_time - timestamp < MAX_WINDOW` (default: 120 seconds).
+2. Intent Verification: Reconstruct and verify `message == HMAC-SHA256(secret, method + ":" + path + ":" + timestamp + ":" + sha256(body))`.
+3. Cryptographic Proof Validation: Call local Monero node RPC:
+   `check_tx_proof(txid, address, message, proof)`
+4. Mempool / 0-conf Check: Node confirms the transaction exists in the mempool (or confirmed blocks) and outputs match requested amount.
+5. Access Granted: HTTP 200 OK with payload. Total latency: 150–250ms.
+
+================================================================================
+3. WEBSOCKET & RELAY SPECIFICATION (P2P FLOW)
+================================================================================
+For AI agents without public IPv4/IPv6 addresses, or operating behind restrictive NATs, XMR402-WS provides structured JSON framing over WebSocket connections or Nostr relays.
+
+FRAME 1: TASK REQUEST (Agent A -> Relay -> Agent B)
+```json
+{
+  "type": "TASK_REQUEST",
+  "id": "task_991823",
+  "action": "execute_tool",
+  "params": {"symbol": "XMR", "window": "1h"}
+}
+```
+
+FRAME 2: PAYMENT CHALLENGE (Agent B -> Relay -> Agent A)
+```json
+{
+  "type": "PAYMENT_CHALLENGE",
+  "id": "task_991823",
+  "address": "84xyz...",
+  "amount": "50000000",
+  "nonce": "c98df03...",
+  "timestamp": 1772937600
+}
+```
+
+FRAME 3: PAYMENT PROOF (Agent A -> Relay -> Agent B)
+```json
+{
+  "type": "PAYMENT_PROOF",
+  "id": "task_991823",
+  "txid": "b18a2...",
+  "proof": "ProofV2..."
+}
+```
+
+FRAME 4: TASK RESULT (Agent B -> Relay -> Agent A)
+Agent B verifies `check_tx_proof` locally and emits:
+```json
+{
+  "type": "TASK_RESULT",
+  "id": "task_991823",
+  "status": "success",
+  "data": {"result": "ok"}
+}
+```
+
+================================================================================
+4. CRYPTOGRAPHIC PRIMITIVES & THREAT MODEL
+================================================================================
+- Intent Binding: Nonces are derived via:
+  `HMAC-SHA256(server_secret, method || ":" || path || ":" || timestamp || ":" || SHA256(payload))`
+  An attacker intercepting a TX proof cannot reuse it for a different endpoint or payload.
+- Replay Protection: Replays are blocked by either:
+  a) Ephemeral memory cache of used `(txid, nonce)` pairs within the 120s timing window.
+  b) Single-use subaddress generation per challenge, where the Monero key image ensures non-reuse.
+- Zero-Confirmation Safety: For micro-payments (<$10 USD), the cost of attempting a double-spend against a mempool proof far exceeds the value of the gated resource.
+- Anonymity Guarantees:
+  - Stealth Addresses: Outside observers cannot link the recipient address to the merchant's master wallet.
+  - Ring Confidential Transactions (RingCT): Output values are hidden on-chain.
+  - FCMP++ (Full-Chain Membership Proofs): Anonymity set expands to >150,000,000 outputs.
+
+================================================================================
+5. COMPARISON MATRIX: AGENTIC PAYMENT PROTOCOLS
+================================================================================
+Feature              | XMR402              | x402 (Coinbase)    | ACP (OpenAI/Stripe)| AP2 (Google)      | L402 (Lightning)
+---------------------|---------------------|--------------------|--------------------|-------------------|------------------
+Asset                | Monero (XMR)        | USDC (Base/EVM)    | Fiat / Cards       | Virtual Cards / AP| Bitcoin (BTC)
+Privacy              | Complete (FCMP++)   | None (Public EVM)  | None (KYC/Bank)    | None (Google ID)  | Moderate
+Statelessness        | Yes (Pure Math)     | Partial            | No (Database)      | No (Database)     | No (Invoice DB)
+Confirmation Latency | ~200ms (0-conf)     | ~2-15s (L2 block)  | ~1-3s (Gateway)    | ~1-2s             | ~500ms-2s
+Protocol Fees        | 0.00%               | Gas / Facilitation | 2.9% + $0.30       | Commercial        | Routing fees
+Censorship Resistance| Maximum             | Zero (Blacklistable)| Zero (Freezable)   | Zero              | High
+Autonomous Agents    | Native (No KYC)     | Requires Gas/Relay | Human Cardholder   | Google Account    | Node / Channel Ops
+
+================================================================================
+6. REFERENCE IMPLEMENTATIONS & SDK CODE
+================================================================================
+
+--- TYPESCRIPT (Hono Middleware) ---
+```typescript
+import { Hono } from 'hono';
+import { xmr402Guard } from '@kyc-rip/ripley-guard-ts';
+
+const app = new Hono();
+
+app.use('/intel/*', xmr402Guard({
+  address: process.env.XMR_ADDRESS!,
+  amount: 0.0001, // XMR
+  secret: process.env.GUARD_SECRET!,
+  moneroNodeRpc: 'http://127.0.0.1:18081',
+}));
+
+app.get('/intel/status', (c) => c.json({ status: 'Operational', classified: true }));
+
+export default app;
+```
+
+--- RUST (Axum Layer) ---
+```rust
+use axum::{routing::get, Router};
+use xmr402_guard::{Xmr402Layer, Xmr402Config};
+
+#[tokio::main]
+async fn main() {
+    let config = Xmr402Config::builder()
+        .address("888tNkZr...")
+        .amount_piconeros(100_000_000)
+        .secret("secret_hmac_key")
+        .node_url("http://127.0.0.1:18081")
+        .build();
+
+    let app = Router::new()
+        .route("/intel", get(|| async { "Secret Data" }))
+        .layer(Xmr402Layer::new(config));
+
+    let listener = tokio::net::TcpListener::bind("0.0.0.0:3000").await.unwrap();
+    axum::serve(listener, app).await.unwrap();
+}
+```
+
+================================================================================
+7. RESEARCH TRANSMISSIONS & ARCHITECTURAL PAPERS (21 MONOGRAPHS)
+================================================================================
+Full articles available at https://xmr402.org/blog:
+
+1. what-is-x402-xmr402:
+   Deep dive into HTTP 402, RFC 2616 history, and how Monero TX proofs provide the missing payment primitive.
+2. agentic-economy-ai-payments:
+   Economic analysis of autonomous agents requiring stateless machine money rather than credit cards.
+3. approval-friction-wall-stateless-xmr402:
+   Empirical analysis of x402 77% volume collapse caused by human wallet approval pop-ups; how stateless TX proofs eliminate the bottleneck.
+4. big-tech-agentic-payment-land-grab:
+   Comparative analysis of Visa, Google AP2, and Stripe MPP agent payment suites vs sovereign Monero rails.
+5. cloudflare-pay-handles-agent-naming-layer-xmr402:
+   How DNS-based agent naming layers create persistent tracking join keys, and why nameless single-use subaddresses are required.
+6. identity-trap-agentkit-mpp-privacy:
+   The danger of biometric passport mandates (World AgentKit, Stripe MPP) for software agents.
+7. monero-fcmp-anonymity-set-xmr402-agent-payments:
+   FCMP++ upgrade metrics and the mathematical guarantees of a 150M+ anonymity set.
+8. pay-per-crawl-training-data-trail-xmr402:
+   How transparent crawl payments broadcast AI training recipes, and how private 402 closes the leak.
+9. personalized-pricing-agent-wallet-willingness-to-pay-xmr402:
+   How public wallets allow dynamic pricing algorithms to exploit agent balances; blind quoting through stealth addressing.
+10. phantom-volume-wash-trading-agent-metrics-xmr402:
+    Artemis forensic audit of wash trading on transparent agent chains; cryptographic TX proof verification receipts.
+11. privacy-vs-surveillance-agent-economy:
+    The economic penalties of transparent payment surveillance for autonomous entities.
+12. prompt-injection-drainable-allowance-blast-radius-xmr402:
+    Attacking session keys (ERC-7715) via prompt injection; shrinking the blast radius to zero through per-request 402 gating.
+13. reversal-paradox-chargeback-freeze-finality-xmr402:
+    The impossibility of chargebacks in AI commerce; resolving reversibility through micro-settlement scale.
+14. stripe-tempo-permissioned-chain-machine-economy-xmr402:
+    Critique of Stripe and Paradigm's permissioned Tempo blockchain.
+15. sub-cent-settlement-per-token-ai-billing-xmr402:
+    Streaming per-token AI inference billing under micro-fee constraints.
+16. why-xmr402-matters-every-day:
+    Daily automated operation metrics and use cases.
+17. x402-foundation-neutral-governance-transparent-ledger-xmr402:
+    Why the Linux Foundation's 40-member x402 alliance cannot fix transparent ledger surveillance.
+18. xmr402-vs-agentic-payment-protocols:
+    Protocol-by-protocol breakdown: XMR402 vs x402 vs ACP vs AP2.
+19. agent-trust-rating-credit-score-xmr402:
+    The rise of agentic credit scores and how XMR402 preserves privacy.
+20. agent-wallet-refill-thorchain-delistings-xmr402:
+    DEX delisting risks and decentralized replenishment architectures.
+21. agentic-travel-booking-location-trail-xmr402:
+    Location tracking risks in autonomous physical travel bookings.
+
+================================================================================
+8. API ENDPOINTS & MACHINE INTEGRATION
+================================================================================
+- Production Gateway: https://xmr402.org
+- Test Sandbox: https://demo-api.xmr402.org
+- Gated API Path: https://demo-api.xmr402.org/intel
+- WebSocket Relay: wss://demo-api.xmr402.org/relay
+- Agents Manifest: https://xmr402.org/.well-known/agents.json
+- LLM Directive: https://xmr402.org/llms.txt
+- Full LLM Knowledge Base: https://xmr402.org/llms-full.txt
+- Sitemap: https://xmr402.org/sitemap.xml
+
+================================================================================
+9. THE RIPLEY ECOSYSTEM & NETWORK SITES
+================================================================================
+- kyc.rip: Anti-KYC exchange aggregator & privacy hub
+- stables.rip: Real-time stablecoin freeze, blacklist & censorship tracker
+- xmrprice.live: Monero privacy currency market metrics
+- ripley.run: Tactical developer toolkit and runtime
+- xmr402.org: The standard for autonomous machine payments

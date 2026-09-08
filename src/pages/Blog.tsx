@@ -34,10 +34,11 @@ export function Blog() {
   const [error, setError] = useState(false)
 
   useSEO({
-    title: 'Blog | XMR402',
-    description: 'Latest news, guides, and insights about XMR402, HTTP 402, and the agentic economy.',
+    title: t('seo.blog_title', 'Transmissions & Research | XMR402 Blog'),
+    description: t('seo.blog_description', 'Technical articles, protocol analyses, and research on autonomous agent payments, zero-confirmation Monero settlements, and surveillance capitalism.'),
     ogType: 'website',
-    canonicalUrl: 'https://xmr402.org/blog',
+    canonicalPath: '/blog',
+    keywords: ['XMR402 Blog', 'Agentic Payments', 'HTTP 402', 'Machine Economy', 'Monero Research', 'FCMP++'],
   })
 
   useEffect(() => {

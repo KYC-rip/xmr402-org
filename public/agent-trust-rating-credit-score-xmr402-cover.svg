@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="The Agent Credit Score: AMP vs XMR402">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#11111a"/>
+    </linearGradient>
+    <linearGradient id="orangeFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ff6600" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="tier1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8a3d"/>
+      <stop offset="100%" stop-color="#ff6600"/>
+    </linearGradient>
+    <linearGradient id="tier2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cc5200"/>
+      <stop offset="100%" stop-color="#9a3d00"/>
+    </linearGradient>
+    <linearGradient id="tier3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b2900"/>
+      <stop offset="100%" stop-color="#3d1700"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a1a26" stroke-width="1"/>
+    </pattern>
+    <pattern id="microgrid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#1a1a26" stroke-width="0.5" stroke-opacity="0.6"/>
+    </pattern>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.6"/>
+
+  <!-- Top corner mark -->
+  <g transform="translate(48, 44)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <rect x="0" y="0" width="14" height="14" fill="#ff6600"/>
+    <text x="24" y="12" fill="#e6e6f0" font-size="14" letter-spacing="2">XMR402.ORG</text>
+    <text x="24" y="30" fill="#7a7a90" font-size="11" letter-spacing="2">/ DISPATCH · 2026-05-29</text>
+  </g>
+
+  <!-- Top right small stat -->
+  <g transform="translate(1152, 60)" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text fill="#7a7a90" font-size="11" letter-spacing="2">SOURCE · ANT INTL · AMP</text>
+  </g>
+
+  <!-- Title -->
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Helvetica, Arial, sans-serif">
+    <text x="48" y="138" fill="#ffffff" font-size="44" font-weight="700">The Agent Credit Score</text>
+    <text x="48" y="182" fill="#9a9ab0" font-size="22" font-weight="400">AMP ranks every AI agent into a tier. XMR402 refuses to.</text>
+  </g>
+
+  <!-- LEFT: AMP Tier Stack (credit-score card style) -->
+  <g transform="translate(60, 240)">
+    <!-- Card background -->
+    <rect x="0" y="0" width="500" height="340" fill="#11111a" stroke="#ff6600" stroke-opacity="0.5" stroke-width="1.5" rx="10"/>
+    <rect x="0" y="0" width="500" height="340" fill="url(#microgrid)" opacity="0.5" rx="10"/>
+
+    <!-- Card header -->
+    <text x="24" y="34" fill="#9a9ab0" font-family="ui-monospace, Menlo, monospace" font-size="11" letter-spacing="2">AMP · AGENT TRUST RATING</text>
+    <text x="24" y="60" fill="#ffffff" font-family="ui-sans-serif, system-ui" font-size="20" font-weight="700">Agent #A7F3-B201</text>
+    <text x="24" y="80" fill="#7a7a90" font-family="ui-monospace, Menlo, monospace" font-size="11">SCORE · 642 / 850</text>
+
+    <!-- Tier bars -->
+    <g transform="translate(24, 100)">
+      <!-- Tier 1 -->
+      <rect x="0" y="0" width="452" height="40" rx="4" fill="url(#tier1)" opacity="0.95"/>
+      <text x="14" y="18" fill="#0a0a0f" font-family="ui-sans-serif, system-ui" font-size="12" font-weight="700">TIER 1 · FULL AUTONOMY</text>
+      <text x="14" y="32" fill="#0a0a0f" font-family="ui-monospace, Menlo, monospace" font-size="10">12% of agents · cap unlimited</text>
+
+      <!-- Tier 2 (highlighted - current) -->
+      <rect x="0" y="50" width="452" height="40" rx="4" fill="url(#tier2)"/>
+      <rect x="0" y="50" width="452" height="40" rx="4" fill="none" stroke="#ff6600" stroke-width="2"/>
+      <text x="14" y="68" fill="#ffffff" font-family="ui-sans-serif, system-ui" font-size="12" font-weight="700">TIER 2 · APPROVAL-GATED   ← YOU ARE HERE</text>
+      <text x="14" y="82" fill="#e6e6f0" font-family="ui-monospace, Menlo, monospace" font-size="10">38% of agents · approval prompt per call</text>
+
+      <!-- Tier 3 -->
+      <rect x="0" y="100" width="452" height="40" rx="4" fill="url(#tier3)"/>
+      <text x="14" y="118" fill="#e6e6f0" font-family="ui-sans-serif, system-ui" font-size="12" font-weight="700">TIER 3 · CAP-LIMITED</text>
+      <text x="14" y="132" fill="#9a9ab0" font-family="ui-monospace, Menlo, monospace" font-size="10">35% of agents · $0.05 / call max</text>
+
+      <!-- Tier 4 -->
+      <rect x="0" y="150" width="452" height="40" rx="4" fill="#1a0a02" stroke="#3d1700" stroke-width="1"/>
+      <text x="14" y="168" fill="#7a7a90" font-family="ui-sans-serif, system-ui" font-size="12" font-weight="700">TIER 4 · SANDBOXED / BLOCKED</text>
+      <text x="14" y="182" fill="#5a5a70" font-family="ui-monospace, Menlo, monospace" font-size="10">15% of agents · no autonomous spend</text>
+    </g>
+
+    <!-- Footer footnote -->
+    <text x="24" y="316" fill="#7a7a90" font-family="ui-monospace, Menlo, monospace" font-size="10">SCORE RECOMPUTED PER TRANSACTION</text>
+    <text x="24" y="330" fill="#5a5a70" font-family="ui-monospace, Menlo, monospace" font-size="10">MODEL: PROPRIETARY · APPEAL: SLOW</text>
+  </g>
+
+  <!-- DIVIDER ARROW -->
+  <g transform="translate(580, 410)" font-family="ui-monospace, Menlo, monospace">
+    <text x="0" y="-6" fill="#7a7a90" font-size="11" letter-spacing="2" text-anchor="middle">vs</text>
+    <line x1="-22" y1="0" x2="22" y2="0" stroke="#ff6600" stroke-width="2"/>
+    <polygon points="22,0 14,-5 14,5" fill="#ff6600"/>
+  </g>
+
+  <!-- RIGHT: XMR402 stateless card -->
+  <g transform="translate(640, 240)">
+    <!-- Card background -->
+    <rect x="0" y="0" width="500" height="340" fill="#11111a" stroke="#ff6600" stroke-opacity="0.9" stroke-width="2" rx="10"/>
+    <rect x="0" y="0" width="500" height="340" fill="url(#microgrid)" opacity="0.4" rx="10"/>
+
+    <!-- Card header -->
+    <text x="24" y="34" fill="#ff6600" font-family="ui-monospace, Menlo, monospace" font-size="11" letter-spacing="2">XMR402 · STATELESS SETTLEMENT</text>
+    <text x="24" y="60" fill="#ffffff" font-family="ui-sans-serif, system-ui" font-size="20" font-weight="700">Agent (anonymous)</text>
+    <text x="24" y="80" fill="#7a7a90" font-family="ui-monospace, Menlo, monospace" font-size="11">SCORE · NONE</text>
+
+    <!-- The single equal tier -->
+    <g transform="translate(24, 100)">
+      <rect x="0" y="0" width="452" height="84" rx="6" fill="#0f0f17" stroke="#ff6600" stroke-width="2"/>
+      <text x="226" y="32" fill="#ffffff" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="700">ONE TIER · EQUAL STANDING</text>
+      <text x="226" y="54" fill="#e6e6f0" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10">Every agent pays the same. Every request stands alone.</text>
+      <text x="226" y="70" fill="#9a9ab0" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10">No history. No ID. No score to defend.</text>
+    </g>
+
+    <!-- Flow markers -->
+    <g transform="translate(24, 210)" font-family="ui-monospace, Menlo, monospace" font-size="10">
+      <g>
+        <rect x="0" y="0" width="14" height="14" fill="#ff6600"/>
+        <text x="24" y="11" fill="#e6e6f0">402 Payment Required</text>
+      </g>
+      <g transform="translate(0, 24)">
+        <rect x="0" y="0" width="14" height="14" fill="#ff6600"/>
+        <text x="24" y="11" fill="#e6e6f0">Pay exact amount in XMR</text>
+      </g>
+      <g transform="translate(0, 48)">
+        <rect x="0" y="0" width="14" height="14" fill="#ff6600"/>
+        <text x="24" y="11" fill="#e6e6f0">TX proof verified in ~200ms</text>
+      </g>
+      <g transform="translate(0, 72)">
+        <rect x="0" y="0" width="14" height="14" fill="#ff6600"/>
+        <text x="24" y="11" fill="#e6e6f0">200 OK · next request from zero</text>
+      </g>
+    </g>
+
+    <!-- Footer footnote -->
+    <text x="24" y="316" fill="#ff6600" font-family="ui-monospace, Menlo, monospace" font-size="10">NO RATING. NO TIER. NO GATE.</text>
+    <text x="24" y="330" fill="#7a7a90" font-family="ui-monospace, Menlo, monospace" font-size="10">PRIVACY = ABSENCE OF STORAGE</text>
+  </g>
+
+  <!-- Bottom line -->
+  <g transform="translate(48, 608)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text fill="#7a7a90" font-size="11" letter-spacing="2">XMR402 · STATELESS · MONERO-NATIVE · NO REPUTATION SCORE FOR YOUR AGENT TO LOSE</text>
+  </g>
+</svg>

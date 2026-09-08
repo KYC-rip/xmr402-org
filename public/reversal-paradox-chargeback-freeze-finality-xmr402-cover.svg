@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="The Reversal Paradox — XMR402">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="55%" stop-color="#0d0d16"/>
+      <stop offset="100%" stop-color="#100b08"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6600"/>
+      <stop offset="100%" stop-color="#ffa14d"/>
+    </linearGradient>
+    <linearGradient id="fadeL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ff6600" stop-opacity="0.9"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ff6600" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ff6600" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#ff6600"/>
+    </marker>
+    <marker id="arrowDim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <ellipse cx="980" cy="150" rx="420" ry="300" fill="url(#glow)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#orange)"/>
+
+  <!-- eyebrow -->
+  <g transform="translate(72,88)">
+    <rect x="0" y="-24" width="10" height="34" rx="2" fill="#ff6600"/>
+    <text x="26" y="2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="19" letter-spacing="4" fill="#ff8c33">XMR402 · AGENTIC PAYMENTS</text>
+  </g>
+
+  <!-- title -->
+  <text x="72" y="180" font-family="Inter,Helvetica,Arial,sans-serif" font-size="64" font-weight="700" fill="#f5f5f7">The Reversal</text>
+  <text x="72" y="252" font-family="Inter,Helvetica,Arial,sans-serif" font-size="64" font-weight="700" fill="url(#orange)">Paradox</text>
+  <text x="72" y="308" font-family="Inter,Helvetica,Arial,sans-serif" font-size="25" fill="#9ca3af">Chargeback liability, freeze switches,</text>
+  <text x="72" y="344" font-family="Inter,Helvetica,Arial,sans-serif" font-size="25" fill="#9ca3af">and payments too small to dispute.</text>
+
+  <!-- three rails -->
+  <g transform="translate(72,412)">
+    <!-- rail 1: card - reversible -->
+    <rect x="0" y="0" width="330" height="146" rx="12" fill="#12121b" stroke="#2a2a38"/>
+    <text x="22" y="36" font-family="ui-monospace,Menlo,monospace" font-size="14" letter-spacing="2" fill="#6b7280">CARD RAIL · ACP</text>
+    <path d="M22 74 H150" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowDim)"/>
+    <path d="M150 96 H22" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arrowDim)"/>
+    <text x="168" y="80" font-family="Inter,Helvetica,Arial,sans-serif" font-size="15" fill="#d1d5db">pay</text>
+    <text x="168" y="102" font-family="Inter,Helvetica,Arial,sans-serif" font-size="15" fill="#ef4444">clawback</text>
+    <text x="22" y="128" font-family="Inter,Helvetica,Arial,sans-serif" font-size="16" fill="#9ca3af">Merchant proves intent</text>
+
+    <!-- rail 2: stablecoin - freezable -->
+    <rect x="358" y="0" width="330" height="146" rx="12" fill="#12121b" stroke="#2a2a38"/>
+    <text x="380" y="36" font-family="ui-monospace,Menlo,monospace" font-size="14" letter-spacing="2" fill="#6b7280">STABLECOIN RAIL</text>
+    <path d="M380 82 H500" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowDim)"/>
+    <g transform="translate(512,82)">
+      <circle r="17" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+      <path d="M0 -9 V2" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M-8 6 A10 10 0 1 0 8 6" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <text x="546" y="88" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#ef4444">freeze()</text>
+    <text x="380" y="128" font-family="Inter,Helvetica,Arial,sans-serif" font-size="16" fill="#9ca3af">Issuer holds the switch</text>
+
+    <!-- rail 3: xmr402 -->
+    <rect x="716" y="0" width="340" height="146" rx="12" fill="#160f08" stroke="#ff6600" stroke-opacity="0.55"/>
+    <text x="738" y="36" font-family="ui-monospace,Menlo,monospace" font-size="14" letter-spacing="2" fill="#ff8c33">XMR402 · MONERO</text>
+    <path d="M738 82 H900" stroke="url(#fadeL)" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(936,82)">
+      <circle r="18" fill="none" stroke="#ff6600" stroke-width="2.5"/>
+      <path d="M-8 1 L-2 8 L9 -6" fill="none" stroke="#ff6600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="738" y="128" font-family="Inter,Helvetica,Arial,sans-serif" font-size="16" fill="#e5c9b0">No issuer. No dispute channel.</text>
+  </g>
+
+  <!-- footer -->
+  <g transform="translate(0,596)">
+    <path d="M72 0 H1128" stroke="#ff6600" stroke-opacity="0.18"/>
+    <text x="72" y="26" font-family="ui-monospace,Menlo,monospace" font-size="15" fill="#6b7280">xmr402.org</text>
+    <text x="1128" y="26" text-anchor="end" font-family="ui-monospace,Menlo,monospace" font-size="15" fill="#6b7280">@xbtoshi · 2026-09-04</text>
+  </g>
+</svg>

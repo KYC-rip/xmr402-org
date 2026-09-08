@@ -1,0 +1,44 @@
+{
+  "issuer": "https://xmr402.org",
+  "authorization_endpoint": "https://demo-api.xmr402.org/intel",
+  "token_endpoint": "https://demo-api.xmr402.org/intel",
+  "jwks_uri": "https://demo-api.xmr402.org/.well-known/jwks.json",
+  "scopes_supported": [
+    "read:intel",
+    "stream:relay"
+  ],
+  "response_types_supported": [
+    "token"
+  ],
+  "grant_types_supported": [
+    "urn:ietf:params:oauth:grant-type:token-exchange",
+    "client_credentials"
+  ],
+  "identity_types_supported": [
+    "anonymous"
+  ],
+  "agent_auth": {
+    "skill": "https://xmr402.org/auth.md",
+    "register_uri": "https://demo-api.xmr402.org/intel",
+    "claim_uri": "https://demo-api.xmr402.org/intel",
+    "identity_types_supported": [
+      "anonymous"
+    ],
+    "supported_methods": [
+      "xmr402-tx-proof",
+      "anonymous"
+    ],
+    "anonymous": {
+      "credential_types_supported": [
+        "xmr402_proof"
+      ],
+      "claim_uri": "https://demo-api.xmr402.org/intel"
+    }
+  },
+  "anonymous": {
+    "credential_types_supported": [
+      "xmr402_proof"
+    ],
+    "claim_uri": "https://demo-api.xmr402.org/intel"
+  }
+}

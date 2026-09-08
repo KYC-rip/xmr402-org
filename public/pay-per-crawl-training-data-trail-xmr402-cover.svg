@@ -1,0 +1,79 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a0f"/>
+      <stop offset="1" stop-color="#12101a"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff8c1a"/>
+      <stop offset="1" stop-color="#ff6600"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.32" r="0.55">
+      <stop offset="0" stop-color="#ff6600" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ff6600" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ff6600" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="0" y="0" width="1200" height="6" fill="url(#orange)"/>
+
+  <!-- top label -->
+  <text x="70" y="92" fill="#ff6600" font-size="22" font-weight="700" letter-spacing="3">XMR402.ORG  ·  THE AGENTIC ECONOMY</text>
+
+  <!-- Title -->
+  <text x="70" y="186" fill="#ffffff" font-size="62" font-weight="800">The Crawl Trail</text>
+  <text x="70" y="252" fill="#e8e6f0" font-size="30" font-weight="500">Pay-per-crawl maps every AI lab's</text>
+  <text x="70" y="294" fill="#e8e6f0" font-size="30" font-weight="500">training strategy. <tspan fill="#ff6600" font-weight="700">XMR402 closes the ledger.</tspan></text>
+
+  <!-- crawler node graph (right) -->
+  <g transform="translate(760,360)">
+    <!-- links -->
+    <g stroke="#ff6600" stroke-opacity="0.5" stroke-width="2">
+      <line x1="0" y1="0" x2="-150" y2="-90"/>
+      <line x1="0" y1="0" x2="150" y2="-95"/>
+      <line x1="0" y1="0" x2="-170" y2="70"/>
+      <line x1="0" y1="0" x2="160" y2="85"/>
+      <line x1="0" y1="0" x2="10" y2="150"/>
+    </g>
+    <!-- publisher page nodes -->
+    <g fill="#1b1726" stroke="#ff6600" stroke-width="2">
+      <rect x="-178" y="-112" width="56" height="44" rx="6"/>
+      <rect x="122" y="-118" width="56" height="44" rx="6"/>
+      <rect x="-200" y="48" width="56" height="44" rx="6"/>
+      <rect x="132" y="62" width="56" height="44" rx="6"/>
+      <rect x="-18" y="126" width="56" height="44" rx="6"/>
+    </g>
+    <g fill="#ff6600" opacity="0.85">
+      <rect x="-170" y="-104" width="40" height="5" rx="2"/>
+      <rect x="-170" y="-94" width="28" height="5" rx="2"/>
+      <rect x="130" y="-110" width="40" height="5" rx="2"/>
+      <rect x="130" y="-100" width="26" height="5" rx="2"/>
+      <rect x="-192" y="56" width="40" height="5" rx="2"/>
+      <rect x="-192" y="66" width="30" height="5" rx="2"/>
+      <rect x="140" y="70" width="40" height="5" rx="2"/>
+      <rect x="140" y="80" width="24" height="5" rx="2"/>
+      <rect x="-10" y="134" width="40" height="5" rx="2"/>
+      <rect x="-10" y="144" width="30" height="5" rx="2"/>
+    </g>
+    <!-- central crawler / monero hub -->
+    <circle cx="0" cy="0" r="58" fill="#0a0a0f" stroke="url(#orange)" stroke-width="4"/>
+    <text x="0" y="14" fill="#ff6600" font-size="42" font-weight="800" text-anchor="middle">ɱ</text>
+  </g>
+
+  <!-- 402 chip -->
+  <g transform="translate(70,372)">
+    <rect x="0" y="0" width="300" height="118" rx="14" fill="#1b1726" stroke="#ff6600" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="22" y="52" fill="#ffffff" font-size="44" font-weight="800">402</text>
+    <text x="120" y="40" fill="#9a96ad" font-size="17" font-weight="600">PAYMENT REQUIRED</text>
+    <text x="120" y="66" fill="#ff6600" font-size="17" font-weight="700">~200ms · 0-conf</text>
+    <text x="22" y="98" fill="#9a96ad" font-size="16">amount · payer · payee — hidden on-chain</text>
+  </g>
+
+  <!-- bottom tagline -->
+  <text x="70" y="566" fill="#7d7990" font-size="20" font-weight="500">Pay the publisher — not the surveillance ledger.</text>
+</svg>

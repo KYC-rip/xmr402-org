@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Box, Github, Terminal, Zap, ShieldCheck, HeartHandshake, Wallet, Wrench, Globe, Twitter, Star } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { useSEO } from '../hooks/useSEO'
 
 const CategoryIconMap: Record<string, React.ReactNode> = {
   'guards': <ShieldCheck size={20} className="text-emerald-500" />,
@@ -122,6 +123,14 @@ function ProjectCard({ project, categoryName }: { project: Project; categoryName
 
 export function Ecosystem() {
   const { t } = useTranslation()
+
+  useSEO({
+    title: t('seo.ecosystem_title', 'Ecosystem | XMR402 Protocol'),
+    description: t('seo.ecosystem_description', 'Explore the ecosystem of tools, guards, gateways, and AI agent skills built on the XMR402 payment standard.'),
+    canonicalPath: '/ecosystem',
+    keywords: ['XMR402 Ecosystem', 'Ripley Guard', 'Ripley Gateway', 'Ripley Terminal', 'Monero MCP', 'AI Agent Payments'],
+  })
+
   const [data, setData] = useState<EcosystemData | null>(null)
   const [loading, setLoading] = useState(true)
   const [activeCategory, setActiveCategory] = useState<string>('all')

@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "XMR402 Payment Protocol",
+  "name_for_model": "xmr402",
+  "description_for_human": "Stateless, anonymous machine-to-machine payment protocol powered by Monero for AI agents and APIs.",
+  "description_for_model": "XMR402 is an open standard for HTTP 402 Payment Required micro-payments between autonomous AI agents and servers using Monero (XMR) transaction proofs. It operates statelessly with ~200ms settlement, zero protocol fees, and zero identity requirements.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://xmr402.org/openapi.json"
+  },
+  "logo_url": "https://xmr402.org/favicon.svg",
+  "contact_email": "contact@xmr402.org",
+  "legal_info_url": "https://xmr402.org"
+}

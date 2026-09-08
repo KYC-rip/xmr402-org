@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'Segoe UI',Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a0f"/>
+      <stop offset="1" stop-color="#13101a"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff6600"/>
+      <stop offset="1" stop-color="#ff9446"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="0" y="0" width="1200" height="6" fill="url(#orange)"/>
+
+  <!-- tag -->
+  <rect x="64" y="70" width="360" height="38" rx="19" fill="#ff6600" fill-opacity="0.12" stroke="#ff6600" stroke-opacity="0.5"/>
+  <text x="84" y="95" fill="#ff9446" font-size="18" letter-spacing="2" font-weight="600">GOVERNANCE vs OBSERVATION</text>
+
+  <!-- Title -->
+  <text x="64" y="182" fill="#ffffff" font-size="58" font-weight="800">Forty Members, One Ledger</text>
+  <text x="64" y="240" fill="#cfcad6" font-size="30" font-weight="400">The x402 Foundation launched neutral.</text>
+  <text x="64" y="282" fill="#cfcad6" font-size="30" font-weight="400">Neutral governance isn't <tspan fill="#ff8533" font-weight="700">neutral privacy.</tspan></text>
+
+  <!-- Comparison panels -->
+  <!-- x402 Foundation (transparent) -->
+  <g transform="translate(64,360)">
+    <rect width="340" height="200" rx="14" fill="#161320" stroke="#ff6600" stroke-opacity="0.25"/>
+    <text x="24" y="46" fill="#9a93a6" font-size="17" letter-spacing="2" font-weight="600">x402 FOUNDATION</text>
+    <!-- eye icon -->
+    <g transform="translate(24,66)" stroke="#ff6600" fill="none" stroke-width="3">
+      <path d="M2 28c8-16 34-16 42 0-8 16-34 16-42 0z" fill="#ff6600" fill-opacity="0.12"/>
+      <circle cx="23" cy="28" r="7" fill="#ff6600" stroke="none"/>
+    </g>
+    <text x="86" y="90" fill="#ffffff" font-size="20" font-weight="700">40 members</text>
+    <text x="86" y="116" fill="#8d8696" font-size="16">Visa · MC · Stripe · Circle</text>
+    <text x="24" y="158" fill="#ff8a5c" font-size="16">• Transparent by default</text>
+    <text x="24" y="182" fill="#ff8a5c" font-size="16">• Amounts + addresses on-chain</text>
+  </g>
+
+  <!-- XMR402 (private) -->
+  <g transform="translate(430,360)">
+    <rect width="340" height="200" rx="14" fill="#161320" stroke="#ff6600" stroke-opacity="0.55"/>
+    <text x="24" y="46" fill="#ff9446" font-size="17" letter-spacing="2" font-weight="600">XMR402 ON MONERO</text>
+    <!-- shield icon -->
+    <g transform="translate(24,64)">
+      <path d="M22 4l20 7v14c0 12-9 20-20 24C11 45 2 37 2 25V11z" fill="#ff6600" fill-opacity="0.15" stroke="#ff6600" stroke-width="3"/>
+      <path d="M13 25l6 6 12-12" fill="none" stroke="#ff6600" stroke-width="3"/>
+    </g>
+    <text x="86" y="90" fill="#ffffff" font-size="20" font-weight="700">Private by default</text>
+    <text x="86" y="116" fill="#8d8696" font-size="16">150M+ anonymity set</text>
+    <text x="24" y="158" fill="#7ee0a8" font-size="16">• Verifier sees only "valid"</text>
+    <text x="24" y="182" fill="#7ee0a8" font-size="16">• 200ms 0-conf · TX proof</text>
+  </g>
+
+  <!-- 402 motif -->
+  <g transform="translate(880,360)">
+    <rect width="256" height="200" rx="14" fill="#0d0b14" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="128" y="118" fill="url(#orange)" font-size="84" font-weight="800" text-anchor="middle" filter="url(#glow)">402</text>
+    <text x="128" y="156" fill="#8d8696" font-size="17" text-anchor="middle" letter-spacing="3">PAYMENT REQUIRED</text>
+  </g>
+
+  <!-- footer -->
+  <text x="64" y="604" fill="#6f6a7a" font-size="20" font-weight="600">xmr402.org</text>
+  <text x="1136" y="604" fill="#6f6a7a" font-size="18" text-anchor="end">Monero-native X402 · stateless agent payments</text>
+</svg>

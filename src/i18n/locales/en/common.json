@@ -25,9 +25,9 @@
   },
   "home": {
     "hero": {
-      "badge": "PROTOCOL v{{version}} \u2022 TRANSPORT AGNOSTIC",
-      "subtitle": "The Internet\u2019s Sovereign Payment Primitive for Agents, APIs, & Relays.",
-      "description": "XMR402 is an open, neutral standard for internet-native payments. In v2.0, it evolves into a decoupled, transport-agnostic primitive. Whether you\u2019re gating REST APIs via HTTP 402 or streaming P2P JSON frames over WebSockets, XMR402 enables any client to buy network resources in milliseconds.",
+      "badge": "PROTOCOL v{{version}} • TRANSPORT AGNOSTIC",
+      "subtitle": "The Internet’s Sovereign Payment Primitive for Agents, APIs, & Relays.",
+      "description": "XMR402 is an open, neutral standard for internet-native payments. In v2.0, it evolves into a decoupled, transport-agnostic primitive. Whether you’re gating REST APIs via HTTP 402 or streaming P2P JSON frames over WebSockets, XMR402 enables any client to buy network resources in milliseconds.",
       "cta_interact": "INTERACT WITH PROTOCOL",
       "cta_whitepaper": "WHITEPAPER",
       "cta_ecosystem": "ECOSYSTEM"
@@ -35,7 +35,7 @@
     "oneliner": {
       "header": "Accept payments with a single line of code",
       "code_label": "With Ripley Guard",
-      "footer": "That\u2019s it. Add one line of code to require payment for each incoming request. If a request arrives without payment, the server responds with HTTP 402, prompting the client to pay and retry."
+      "footer": "That’s it. Add one line of code to require payment for each incoming request. If a request arrives without payment, the server responds with HTTP 402, prompting the client to pay and retry."
     },
     "pillars": {
       "title": "Protocol Pillars",
@@ -50,13 +50,13 @@
       "stateless_purity": "Stateless Purity",
       "stateless_purity_desc": "No databases. No polling. No wallet tracking bloat. XMR402 architecture relies purely on math and node RPCs.",
       "zero_fees": "Zero protocol fees",
-      "zero_fees_desc": "XMR402 is free for the customer and the merchant\u2014just pay nominal network transaction fees."
+      "zero_fees_desc": "XMR402 is free for the customer and the merchant—just pay nominal network transaction fees."
     },
     "tactical": {
       "title": "Tactical Implementation",
       "server_label": "Standard 402 Response (Server-side)",
       "client_label": "Authorization Header (Client-side)",
-      "spec_text": "It\u2019s how the internet should be: open, free, and effortless.",
+      "spec_text": "It’s how the internet should be: open, free, and effortless.",
       "spec_link": "READ THE FULL SPECIFICATION ON GITHUB"
     },
     "flow": {
@@ -155,7 +155,7 @@
     },
     "sandbox": {
       "title": "Industrial Sandbox",
-      "description": "Rapidly verify your client implementation against our worldwide edge node. No signup, no keys\u2014just tactical primitives.",
+      "description": "Rapidly verify your client implementation against our worldwide edge node. No signup, no keys—just tactical primitives.",
       "copy_url": "COPY URL",
       "copied": "COPIED",
       "http_gate": "HTTP Gate",
@@ -173,7 +173,7 @@
       "q3": "How do I integrate XMR402?",
       "a3": "Integration is flexible. Developers can deploy Ripley Guard as HTTP middleware (Hono/Express/Axum) or use the v2.0 WebSocket adapter for JSON-based P2P handshakes. Any client can then interact with the gate using standard headers or WebSocket frames.",
       "q4": "What is Payload Binding (HMAC)?",
-      "a4": "Payload Binding is a v2.0 security feature that cryptographically hashes the client\u2019s request intent (URL, Body, IP) into the payment challenge. This ensures that a payment for one specific instruction cannot be intercepted or recycled for a different, potentially more expensive task.",
+      "a4": "Payload Binding is a v2.0 security feature that cryptographically hashes the client’s request intent (URL, Body, IP) into the payment challenge. This ensures that a payment for one specific instruction cannot be intercepted or recycled for a different, potentially more expensive task.",
       "q5": "What blockchains does XMR402 support?",
       "a5": "While the XMR402 standard is blockchain-agnostic, it prioritizes <1>Monero (XMR)</1> due to its superior privacy primitives and native transaction proof capabilities. Compatibility with other privacy-preserving networks is currently under research.",
       "q6": "Is 0-conf safe from double-spend attacks?",
@@ -251,5 +251,15 @@
     "error_ws_json": "Invalid JSON frame received.",
     "frame_send": ">> SEND: ",
     "frame_recv": "<< RECV: "
+  },
+  "seo": {
+    "home_title": "XMR402 | The Tactical Standard for AI-Native Payments",
+    "home_description": "XMR402 is an open, neutral standard for internet-native payments. It empowers agentic micro-transactions between clients and servers with zero friction and maximum privacy.",
+    "ecosystem_title": "Ecosystem | XMR402 Protocol",
+    "ecosystem_description": "Explore the ecosystem of tools, guards, gateways, and AI agent skills built on the XMR402 payment standard.",
+    "donate_title": "Donate & Support | XMR402 Protocol",
+    "donate_description": "Support open-source development of XMR402 and sovereign, privacy-preserving infrastructure for the autonomous machine economy.",
+    "blog_title": "Transmissions & Research | XMR402 Blog",
+    "blog_description": "Technical articles, protocol analyses, and research on autonomous agent payments, zero-confirmation Monero settlements, and surveillance capitalism."
   }
 }

@@ -1,0 +1,21 @@
+{
+  "protocol_version": "1.0.0",
+  "services": [
+    {
+      "id": "xmr402-payments",
+      "name": "XMR402 Content & API Payments",
+      "description": "Universal autonomous content gating and micro-settlements using zero-confirmation Monero proofs",
+      "spec_url": "https://xmr402.org/openapi.json"
+    }
+  ],
+  "capabilities": {
+    "streaming": true,
+    "instant_settlement": true,
+    "stateless_verification": true
+  },
+  "endpoints": {
+    "challenge": "https://demo-api.xmr402.org/intel",
+    "verification": "https://demo-api.xmr402.org/intel",
+    "catalog": "https://xmr402.org/.well-known/api-catalog"
+  }
+}

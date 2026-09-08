@@ -2,23 +2,48 @@
   "name": "xmr402.org",
   "description": "XMR402 — stateless, anonymous payment protocol for the machine economy. HTTP 402 Payment Required standard powered by Monero.",
   "url": "https://xmr402.org",
+  "version": "2.0.0",
   "protocol": {
     "name": "XMR402",
     "version": "2.0",
+    "standards": ["RFC 2616", "RFC 9110", "HTTP 402", "Monero TX Proof v2", "LLMS-TXT"],
     "specification": "https://xmr402.org/XMR402_Whitepaper.pdf",
     "description": "Transport-agnostic payment primitive using Monero TX proofs for stateless, anonymous machine-to-machine payments",
     "flow": [
       "Client requests protected resource",
-      "Server responds HTTP 402 with payment challenge (address, amount, nonce)",
-      "Client sends XMR payment and obtains TX proof",
-      "Client retries request with TX proof in headers",
-      "Server verifies proof cryptographically (stateless)",
+      "Server responds HTTP 402 with payment challenge (address, amount, nonce, timestamp)",
+      "Client sends XMR payment and obtains cryptographic TX proof",
+      "Client retries request with TX proof in Authorization header",
+      "Server verifies proof cryptographically via node check_tx_proof (stateless)",
       "Access granted"
-    ]
+    ],
+    "headers": {
+      "challenge": "WWW-Authenticate: XMR402 address=\"...\" amount=\"...\" message=\"...\" timestamp=\"...\"",
+      "authorization": "Authorization: XMR402 txid=\"...\" proof=\"...\""
+    },
+    "capabilities": {
+      "stateless_verification": true,
+      "zero_confirmation_mempool": true,
+      "settlement_latency_ms": 200,
+      "zero_protocol_fees": true,
+      "intent_binding_hmac": true,
+      "anonymity_set": "150M+ (FCMP++)",
+      "transport_transports": ["HTTP", "WebSocket", "Nostr"]
+    }
+  },
+  "endpoints": {
+    "site": "https://xmr402.org",
+    "llms_txt": "https://xmr402.org/llms.txt",
+    "llms_full": "https://xmr402.org/llms-full.txt",
+    "sitemap": "https://xmr402.org/sitemap.xml",
+    "whitepaper": "https://xmr402.org/XMR402_Whitepaper.pdf",
+    "sandbox_http": "https://demo-api.xmr402.org/intel",
+    "sandbox_ws": "wss://demo-api.xmr402.org/relay"
   },
   "implementations": {
     "typescript": {
-      "package": "xmr402-guard",
+      "package": "@kyc-rip/ripley-guard-ts",
+      "legacy_alias": "xmr402-guard",
       "registry": "npm",
       "frameworks": ["Express", "Hono", "WebSocket", "Nostr"]
     },
@@ -35,6 +60,7 @@
   "contact": {
     "twitter": "@xmr402",
     "github": "https://github.com/xmr402/XMR402-org",
+    "author": "@xbtoshi",
     "website": "https://xmr402.org"
   }
 }

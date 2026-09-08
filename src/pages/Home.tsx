@@ -3,6 +3,7 @@ import { Link } from 'wouter'
 import { ShieldCheck, Zap, UserCheck, Share2, GlobeLock, Terminal, Copy, Check, ExternalLink, Box, Cpu, Laptop, FileText, ChevronDown, ChevronUp } from 'lucide-react'
 import { useTranslation, Trans } from 'react-i18next'
 import { XMR402Demo } from '../components/XMR402Demo'
+import { useSEO } from '../hooks/useSEO'
 
 const ProtocolStep = ({ number, title, actor, description }: { number: string, title: string, actor: string, description: string }) => (
   <div className="flow-step">
@@ -63,6 +64,14 @@ const CodeBlock = ({ code, label }: { code: string, label?: string }) => {
 
 export function Home() {
   const { t } = useTranslation()
+
+  useSEO({
+    title: t('seo.home_title', 'XMR402 | The Tactical Standard for AI-Native Payments'),
+    description: t('seo.home_description', 'XMR402 is an open, neutral standard for internet-native payments. It empowers agentic micro-transactions between clients and servers with zero friction and maximum privacy.'),
+    canonicalPath: '/',
+    keywords: ['XMR402', 'Monero', 'AI Payments', 'HTTP 402', 'Micro-transactions', 'Agentic Web', 'Privacy Payments', 'FCMP++'],
+  })
+
   const [activeFlow, setActiveFlow] = useState<'human' | 'agent' | 'relay'>('human')
   const [showDemoModal, setShowDemoModal] = useState(() => {
     if (typeof window !== 'undefined') {

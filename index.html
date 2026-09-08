@@ -5,14 +5,114 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO Meta Tags -->
+  <!-- Primary SEO Meta Tags -->
   <title>XMR402 | The Tactical Standard for AI-Native Payments</title>
   <meta name="description"
-    content="XMR402 is an open, neutral standard for internet-native payments. It empowers agentic micro-transactions between clients and servers with zero friction and maximum privacy." />
+    content="XMR402 is an open, neutral standard for internet-native payments. It empowers agentic micro-transactions between clients and servers with zero friction, zero protocol fees, and maximum privacy." />
   <meta name="keywords"
-    content="XMR402, Monero, AI Payments, Micro-transactions, HTTP 402, Agentic Web, Privacy Payments" />
+    content="XMR402, Monero, AI Payments, Micro-transactions, HTTP 402, Agentic Web, Privacy Payments, Stateless Payments, FCMP++, Zero Confirmation" />
   <meta name="author" content="@xbtoshi" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#000000" />
+  <link rel="canonical" href="https://xmr402.org/" />
+
+  <!-- AI Model & Agent Discovery -->
+  <link rel="alternate" type="text/plain" href="https://xmr402.org/llms.txt" title="LLM Context" />
+  <link rel="alternate" type="text/plain" href="https://xmr402.org/llms-full.txt" title="Full LLM Specification" />
+  <link rel="ai-catalog" href="/.well-known/ai-catalog.json" />
+  <link rel="api-catalog" href="/.well-known/api-catalog" />
+  <link rel="agent-card" href="/.well-known/agent-card.json" />
+  <link rel="mcp-server-card" href="/.well-known/mcp/server-card.json" />
+  <link rel="author" type="text/markdown" href="/auth.md" />
+
+  <!-- WebMCP Tool Registration (W3C navigator.modelContext) -->
+  <script>
+    (function() {
+      var abortController = typeof AbortController !== 'undefined' ? new AbortController() : null;
+      var signal = abortController ? abortController.signal : undefined;
+
+      function registerWebMCP() {
+        if (typeof window !== 'undefined' && 'modelContext' in navigator && navigator.modelContext && typeof navigator.modelContext.registerTool === 'function') {
+          try {
+            // Tool 1: Key Site Action - Search research library
+            var searchTool = {
+              name: 'search-research',
+              description: 'Search technical monographs, protocol specifications, and privacy research papers published on XMR402.',
+              inputSchema: {
+                type: 'object',
+                properties: {
+                  query: { type: 'string', description: 'Search term or topic (e.g. "zero-confirmation", "FCMP++", "surveillance")' }
+                },
+                required: ['query']
+              },
+              execute: async function(args) {
+                var q = (args && args.query || '').toLowerCase();
+                return {
+                  content: [{
+                    type: 'text',
+                    text: 'Search completed for "' + q + '". Relevant transmission endpoints: https://xmr402.org/blog, full specifications: https://xmr402.org/llms-full.txt'
+                  }]
+                };
+              }
+            };
+            if (signal) searchTool.signal = signal;
+            navigator.modelContext.registerTool(searchTool, signal ? { signal: signal } : undefined);
+
+            // Tool 2: Data Retrieval - Fetch HTTP 402 challenge
+            var challengeTool = {
+              name: 'get-xmr402-challenge',
+              description: 'Fetch real-time HTTP 402 payment challenge details including subaddress, required atomic units, and intent nonce HMAC.',
+              inputSchema: {
+                type: 'object',
+                properties: {
+                  endpoint: { type: 'string', description: 'Target resource URL to challenge (default: https://demo-api.xmr402.org/intel)' }
+                }
+              },
+              execute: async function(args) {
+                var url = (args && args.endpoint) || 'https://demo-api.xmr402.org/intel';
+                var res = await fetch(url);
+                var challenge = res.headers.get('www-authenticate');
+                return { content: [{ type: 'text', text: challenge || 'HTTP 402 Challenge Issued' }] };
+              }
+            };
+            if (signal) challengeTool.signal = signal;
+            navigator.modelContext.registerTool(challengeTool, signal ? { signal: signal } : undefined);
+
+            // Tool 3: Action Execution - Verify Monero payment proof
+            var verifyTool = {
+              name: 'verify-tx-proof',
+              description: 'Submit a Monero transaction hash and signature proof to unlock stateless API authorization.',
+              inputSchema: {
+                type: 'object',
+                properties: {
+                  txid: { type: 'string', description: 'Monero transaction hash (64 hex characters)' },
+                  proof: { type: 'string', description: 'Cryptographic signature proof string' }
+                },
+                required: ['txid', 'proof']
+              },
+              execute: async function(args) {
+                var res = await fetch('https://demo-api.xmr402.org/intel', {
+                  headers: { Authorization: 'XMR402 txid="' + (args && args.txid) + '", proof="' + (args && args.proof) + '"' }
+                });
+                var data = await res.text();
+                return { content: [{ type: 'text', text: data }] };
+              }
+            };
+            if (signal) verifyTool.signal = signal;
+            navigator.modelContext.registerTool(verifyTool, signal ? { signal: signal } : undefined);
+          } catch (e) {
+            console.warn('WebMCP registration error:', e);
+          }
+        }
+      }
+      registerWebMCP();
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', registerWebMCP);
+      }
+    })();
+  </script>
+
+  <!-- Favicons & Manifest -->
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -20,6 +120,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
   <!-- Open Graph / Facebook -->
+  <meta property="og:site_name" content="XMR402" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://xmr402.org/" />
   <meta property="og:title" content="XMR402 | The Tactical Standard for AI-Native Payments" />
@@ -27,71 +128,163 @@
     content="Natively integrated payments for the agentic web. Zero friction, zero protocol fees, pure sovereignty." />
   <meta property="og:image" content="https://xmr402.org/og-image.jpg" />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:creator" content="@xbtoshi" />
-  <meta property="twitter:url" content="https://xmr402.org/" />
-  <meta property="twitter:title" content="XMR402 | The Tactical Standard for AI-Native Payments" />
-  <meta property="twitter:description"
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@xmr402" />
+  <meta name="twitter:creator" content="@xbtoshi" />
+  <meta name="twitter:url" content="https://xmr402.org/" />
+  <meta name="twitter:title" content="XMR402 | The Tactical Standard for AI-Native Payments" />
+  <meta name="twitter:description"
     content="Natively integrated payments for the agentic web. Zero friction, zero protocol fees, pure sovereignty." />
-  <meta property="twitter:image" content="https://xmr402.org/og-image.jpg" />
+  <meta name="twitter:image" content="https://xmr402.org/og-image.jpg" />
 
-  <!-- JSON-LD Structured Data -->
+  <!-- JSON-LD Structured Data: Organization, WebSite, SoftwareApplication, FAQPage -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "XMR402",
-      "url": "https://xmr402.org/",
-      "description": "An open, neutral standard for internet-native payments between clients and servers.",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is XMR402 used for?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "XMR402 is designed for high-frequency, low-friction micro-payments. Key use cases include pay-per-request API access, dynamic content gating, autonomous AI agent interactions, and decentralized service monetization without the need for traditional account systems."
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://xmr402.org/#organization",
+        "name": "XMR402",
+        "url": "https://xmr402.org",
+        "logo": "https://xmr402.org/favicon.svg",
+        "sameAs": [
+          "https://x.com/xmr402",
+          "https://github.com/xmr402/XMR402-org"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://xmr402.org/#website",
+        "name": "XMR402",
+        "url": "https://xmr402.org/",
+        "description": "An open, neutral standard for internet-native payments between clients and servers.",
+        "publisher": { "@id": "https://xmr402.org/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "XMR402 Protocol",
+        "applicationCategory": "PaymentApplication",
+        "operatingSystem": "Cross-platform",
+        "softwareVersion": "2.0.0",
+        "description": "A transport-agnostic, stateless payment protocol implementing IETF HTTP 402 using Monero transaction proofs.",
+        "url": "https://xmr402.org"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://xmr402.org/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is XMR402 used for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "XMR402 is designed for high-frequency, low-friction micro-payments. Key use cases include pay-per-request API access, dynamic content gating, autonomous AI agent interactions, and decentralized service monetization without the need for traditional account systems or KYC."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is XMR402 production ready?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The XMR402 v2.0 specification is finalized. Stable reference implementations are available in TypeScript, Go, and Rust. It is currently undergoing production-grade integration within the Ripley AI ecosystem and the Ghost Protocol."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I integrate XMR402?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Integration is straightforward. Developers can deploy the Ripley Guard middleware on the server-side to intercept requests and issue challenges. Clients must be configured to handle HTTP 402 responses by initiating payment and providing cryptographic TX proofs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What blockchains does XMR402 support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "While the XMR402 standard is blockchain-agnostic, it prioritizes Monero (XMR) due to its superior privacy primitives (RingCT, stealth addresses, FCMP++) and native transaction proof capabilities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it require a special wallet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "XMR402 is compatible with any wallet that supports the Monero Transaction Proof (TX Proof) standard. For the most seamless experience, we recommend using Ripley Terminal for desktop or Ripley Gateway for autonomous agents."
+            }
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Is XMR402 production ready?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The XMR402 v1.0 specification is finalized. Stable reference implementations are available in TypeScript, Go, and Rust. It is currently undergoing production-grade integration within the Ripley AI ecosystem and the Ghost Protocol."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I integrate XMR402?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Integration is straightforward. Developers can deploy the Ripley Guard middleware on the server-side to intercept requests and issue challenges. Clients must be configured to handle HTTP 402 responses by initiating the XMR402 deep-link protocol with a compatible wallet."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What blockchains does XMR402 support?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "While the XMR402 standard is blockchain-agnostic, it prioritizes Monero (XMR) due to its superior privacy primitives and native transaction proof capabilities. Compatibility with other privacy-preserving networks is currently under research."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does it require a special wallet?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "XMR402 is compatible with any wallet that supports the Monero Transaction Proof (TX Proof) standard. For the most seamless and tactical experience, we recommend using the Ripley Terminal."
-          }
-        }
-      ]
-    }
-    </script>
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <!-- Static & Crawler Semantic Content (Hydrated by React on mount) -->
+    <header style="padding: 2rem 1rem; text-align: center; border-bottom: 1px solid #222;">
+      <p style="font-size: 0.8rem; font-family: monospace; color: #10b981; letter-spacing: 0.1em; text-transform: uppercase;">
+        PROTOCOL v2.0.0 • TRANSPORT AGNOSTIC
+      </p>
+      <h1 style="font-size: 2.5rem; font-weight: 900; margin: 0.5rem 0;">XMR402</h1>
+      <p style="font-size: 1.25rem; font-weight: 600; color: #ccc;">
+        The Internet’s Sovereign Payment Primitive for Agents, APIs, & Relays.
+      </p>
+      <p style="max-width: 650px; margin: 1rem auto; line-height: 1.6; color: #999;">
+        XMR402 is an open, neutral standard for internet-native payments. In v2.0, it evolves into a decoupled, transport-agnostic primitive. Whether you’re gating REST APIs via HTTP 402 or streaming P2P JSON frames over WebSockets, XMR402 enables any client to buy network resources in milliseconds.
+      </p>
+      <nav style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="/blog" style="color: #10b981; font-weight: bold; text-decoration: none;">Transmissions & Blog</a>
+        <a href="/ecosystem" style="color: #10b981; font-weight: bold; text-decoration: none;">Ecosystem Directory</a>
+        <a href="/donate" style="color: #10b981; font-weight: bold; text-decoration: none;">Donate</a>
+        <a href="/XMR402_Whitepaper.pdf" style="color: #10b981; font-weight: bold; text-decoration: none;">Whitepaper (PDF)</a>
+        <a href="/llms.txt" style="color: #10b981; font-weight: bold; text-decoration: none;">llms.txt</a>
+      </nav>
+    </header>
+
+    <main style="max-width: 800px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6;">
+      <section>
+        <h2>Protocol Pillars</h2>
+        <ul>
+          <li><strong>Transport Agnostic:</strong> From IETF HTTP 402 Headers to persistent JSON WebSocket relays. Dumb pipes, smart cryptographic edges.</li>
+          <li><strong>Payload Binding:</strong> Intent matters. Every payment is cryptographically HMAC-bound to the request payload to kill instruction-spoofing.</li>
+          <li><strong>Zero Friction:</strong> No accounts, no email, no personal information needed. Just a Monero wallet and a challenge.</li>
+          <li><strong>Absolute Speed:</strong> Money moves at internet speed. 0-conf verification ensures 200ms resource access.</li>
+          <li><strong>Stateless Purity:</strong> No databases. No polling. No wallet tracking bloat. XMR402 architecture relies purely on math and node RPCs.</li>
+          <li><strong>Zero Protocol Fees:</strong> XMR402 is free for customer and merchant—just pay nominal network transaction fees.</li>
+        </ul>
+      </section>
+
+      <section style="margin-top: 2rem;">
+        <h2>Tactical Implementation</h2>
+        <p>Standard 402 Response (Server-side):</p>
+        <pre><code>WWW-Authenticate: XMR402 address="8...", amount="1000", message="nonce_123", timestamp="1772937600"</code></pre>
+        <p>Authorization Header (Client-side retry):</p>
+        <pre><code>Authorization: XMR402 txid="&lt;hash&gt;", proof="&lt;signature&gt;"</code></pre>
+      </section>
+
+      <section style="margin-top: 2rem;">
+        <h2>Developer Sandbox</h2>
+        <p>Live sandbox API: <code>https://demo-api.xmr402.org/intel</code></p>
+        <p>WebSocket relay: <code>wss://demo-api.xmr402.org/relay</code></p>
+        <p>TypeScript SDK: <code>@kyc-rip/ripley-guard-ts</code></p>
+      </section>
+    </main>
+
+    <footer style="max-width: 800px; margin: 3rem auto; padding: 1.5rem 1rem; border-top: 1px solid #222; text-align: center; color: #666; font-size: 0.9rem;">
+      <p>© 2026 XMR402 Protocol • Standardized v2.0.0</p>
+    </footer>
+  </div>
+
+  <noscript>
+    <div style="text-align: center; padding: 2rem; color: #10b981; font-family: monospace;">
+      JavaScript is currently disabled. All technical content and documentation above remains fully accessible.
+    </div>
+  </noscript>
+
   <script type="module" src="/src/main.tsx"></script>
 </body>
 

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a0f"/>
+      <stop offset="1" stop-color="#12101a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#ff6600" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ff6600" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ff6600" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="dotFade" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff6600" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ff6600" stop-opacity="0.05"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- swarm of anonymity-set dots on the right -->
+  <g fill="url(#dotFade)">
+    <circle cx="760" cy="120" r="3"/><circle cx="820" cy="150" r="2"/><circle cx="900" cy="110" r="4"/>
+    <circle cx="980" cy="160" r="2.5"/><circle cx="1050" cy="120" r="3"/><circle cx="1120" cy="170" r="2"/>
+    <circle cx="800" cy="220" r="2"/><circle cx="870" cy="250" r="3"/><circle cx="950" cy="210" r="2.5"/>
+    <circle cx="1030" cy="260" r="3.5"/><circle cx="1100" cy="230" r="2"/><circle cx="760" cy="300" r="3"/>
+    <circle cx="840" cy="340" r="2"/><circle cx="930" cy="310" r="3"/><circle cx="1010" cy="360" r="2.5"/>
+    <circle cx="1090" cy="330" r="3"/><circle cx="790" cy="410" r="2.5"/><circle cx="880" cy="440" r="3"/>
+    <circle cx="960" cy="410" r="2"/><circle cx="1040" cy="460" r="3"/><circle cx="1120" cy="430" r="2.5"/>
+    <circle cx="810" cy="510" r="3"/><circle cx="900" cy="540" r="2"/><circle cx="990" cy="510" r="3.5"/>
+    <circle cx="1070" cy="555" r="2.5"/><circle cx="1140" cy="520" r="2"/>
+  </g>
+
+  <!-- highlighted hidden coin among the crowd -->
+  <circle cx="950" cy="310" r="34" fill="none" stroke="#ff6600" stroke-width="2.5" stroke-opacity="0.85"/>
+  <circle cx="950" cy="310" r="20" fill="#ff6600"/>
+  <text x="950" y="318" font-size="22" font-weight="700" fill="#0a0a0f" text-anchor="middle">ɱ</text>
+  <text x="950" y="372" font-size="14" fill="#ff6600" text-anchor="middle" opacity="0.8">which one?</text>
+
+  <!-- left text column -->
+  <text x="70" y="120" font-size="20" font-weight="600" letter-spacing="3" fill="#ff6600">XMR402 · MONERO-NATIVE 402</text>
+
+  <text x="68" y="215" font-size="92" font-weight="800" fill="#ffffff">150,000,000</text>
+  <text x="70" y="262" font-size="26" font-weight="500" fill="#9aa0aa">strong: the largest anonymity set in payments</text>
+
+  <text x="70" y="350" font-size="46" font-weight="700" fill="#ffffff">FCMP++ makes every</text>
+  <text x="70" y="408" font-size="46" font-weight="700" fill="#ffffff">agent payment <tspan fill="#ff6600">disappear</tspan></text>
+
+  <!-- 16 -> 150M bar -->
+  <text x="70" y="486" font-size="18" fill="#9aa0aa">Anonymity set per spend</text>
+  <text x="70" y="540" font-size="34" font-weight="700" fill="#6b7280">16</text>
+  <text x="118" y="540" font-size="30" font-weight="700" fill="#ff6600">→</text>
+  <text x="160" y="540" font-size="34" font-weight="800" fill="#ff6600">150M+</text>
+  <text x="320" y="540" font-size="18" fill="#9aa0aa">ring signatures → full-chain proofs</text>
+
+  <text x="70" y="592" font-size="17" fill="#6b7280">Stateless · Zero-fee · ~200ms 0-conf verification · xmr402.org</text>
+
+  <rect x="0" y="0" width="1200" height="630" fill="none" stroke="#ff6600" stroke-opacity="0.25" stroke-width="2"/>
+</svg>

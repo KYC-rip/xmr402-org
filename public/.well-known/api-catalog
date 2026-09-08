@@ -1,0 +1,24 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://demo-api.xmr402.org/intel",
+      "service-desc": [
+        {
+          "href": "https://xmr402.org/openapi.json",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://xmr402.org/llms.txt",
+          "type": "text/markdown"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://demo-api.xmr402.org/intel"
+        }
+      ]
+    }
+  ]
+}

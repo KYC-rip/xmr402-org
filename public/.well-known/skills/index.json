@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "xmr402-payment",
+      "type": "skill-md",
+      "description": "Autonomous Monero HTTP 402 payment challenge settlement and tx-proof verification for AI agents.",
+      "url": "/.well-known/agent-skills/xmr402-payment/SKILL.md",
+      "digest": "sha256:63306ae5dfb246cdb32df0a01d249504f9757f6913d14c11857517947e1bdbcc"
+    }
+  ]
+}

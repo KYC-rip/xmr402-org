@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'Segoe UI',Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a0f"/>
+      <stop offset="1" stop-color="#12121c"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff8a33"/>
+      <stop offset="1" stop-color="#ff6600"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ff6600" stroke-width="0.5" opacity="0.08"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="0" y="0" width="1200" height="6" fill="url(#orange)"/>
+
+  <!-- tag -->
+  <rect x="80" y="70" width="250" height="34" rx="17" fill="none" stroke="#ff6600" stroke-width="1.5" opacity="0.7"/>
+  <text x="100" y="93" fill="#ff8a33" font-size="16" letter-spacing="3" font-weight="600">PER-TOKEN AI BILLING</text>
+
+  <!-- title -->
+  <text x="80" y="200" fill="#ffffff" font-size="62" font-weight="800">The Sub-Cent</text>
+  <text x="80" y="270" fill="#ffffff" font-size="62" font-weight="800">Settlement Problem</text>
+  <text x="80" y="330" fill="#9a9aa8" font-size="26" font-weight="400">Why per-token AI billing breaks every rail except XMR402</text>
+
+  <!-- the math line -->
+  <g font-family="'Courier New',monospace">
+    <text x="80" y="430" fill="#6f6f80" font-size="30">payload</text>
+    <text x="270" y="430" fill="#ffffff" font-size="30" font-weight="700">$0.0004</text>
+    <text x="450" y="430" fill="#6f6f80" font-size="30">vs gas</text>
+    <text x="600" y="430" fill="#ff5555" font-size="30" font-weight="700">$0.005</text>
+    <text x="780" y="430" fill="#6f6f80" font-size="30">= fee</text>
+    <text x="900" y="430" fill="#ff8a33" font-size="30" font-weight="700" filter="url(#glow)">10&#215;</text>
+  </g>
+
+  <!-- feature chips -->
+  <g font-size="18" font-weight="600">
+    <rect x="80" y="480" width="210" height="46" rx="23" fill="#1c1c28" stroke="#ff6600" stroke-width="1" opacity="0.95"/>
+    <text x="105" y="509" fill="#ff8a33">0% protocol fees</text>
+    <rect x="305" y="480" width="200" height="46" rx="23" fill="#1c1c28" stroke="#ff6600" stroke-width="1" opacity="0.95"/>
+    <text x="330" y="509" fill="#ff8a33">200ms 0-conf</text>
+    <rect x="520" y="480" width="250" height="46" rx="23" fill="#1c1c28" stroke="#ff6600" stroke-width="1" opacity="0.95"/>
+    <text x="545" y="509" fill="#ff8a33">native WebSocket stream</text>
+  </g>
+
+  <!-- right side monero glyph + meter ticks -->
+  <g transform="translate(1010,150)">
+    <circle cx="0" cy="0" r="90" fill="none" stroke="#ff6600" stroke-width="3" opacity="0.85" filter="url(#glow)"/>
+    <text x="0" y="34" fill="url(#orange)" font-size="110" font-weight="800" text-anchor="middle" font-family="Georgia,serif">&#8338;</text>
+  </g>
+  <g stroke="#ff6600" stroke-width="3" opacity="0.5">
+    <line x1="980" y1="300" x2="980" y2="330"/>
+    <line x1="1010" y1="290" x2="1010" y2="330"/>
+    <line x1="1040" y1="300" x2="1040" y2="330"/>
+    <line x1="1070" y1="285" x2="1070" y2="330"/>
+    <line x1="1100" y1="300" x2="1100" y2="330"/>
+  </g>
+  <text x="940" y="370" fill="#6f6f80" font-size="16" font-family="'Courier New',monospace">tok tok tok &#8594; pay</text>
+
+  <!-- footer -->
+  <text x="80" y="585" fill="#ff6600" font-size="22" font-weight="700">xmr402.org</text>
+  <text x="1120" y="585" fill="#6f6f80" font-size="18" text-anchor="end">@xbtoshi</text>
+</svg>

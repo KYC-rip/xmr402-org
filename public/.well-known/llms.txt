@@ -1,86 +1,126 @@
-# xmr402.org
+# XMR402: The Stateless, Anonymous Payment Primitive for the Machine Economy
 
-> XMR402 — the stateless, anonymous payment primitive for the machine economy. HTTP 402 Payment Required standard powered by Monero.
+> XMR402 (https://xmr402.org) is the open, neutral payment protocol for autonomous AI agents, APIs, and P2P relays. It implements the IETF HTTP 402 Payment Required standard powered by Monero (XMR) transaction proofs (TX Proofs) with zero accounts, zero protocol fees, and sub-200ms verification.
 
-## What is XMR402?
+For complete, self-contained documentation including the full specification, cryptographic equations, threat models, and code examples, see:
+https://xmr402.org/llms-full.txt
 
-XMR402 is an open protocol that enables machine-to-machine payments using Monero (XMR). It implements the HTTP 402 "Payment Required" status code as a real payment flow — no accounts, no identity, no waiting for block confirmations.
+---
 
-AI agents, APIs, and P2P relays can use XMR402 to buy and sell network resources in milliseconds with cryptographic proof verification.
+## 1. What is XMR402?
 
-## How It Works
+XMR402 resolves the machine payment crisis. Autonomous AI agents cannot open bank accounts, sign credit card forms, or hold custodial KYC wallets. Meanwhile, transparent blockchain protocols (USDC, Base, ERC-8183) expose an agent's financial trace, willingness-to-pay profile, and location history to public surveillance.
 
-1. Client requests a protected resource
-2. Server responds with HTTP 402 and a payment challenge (address, amount, nonce)
-3. Client sends XMR payment and obtains a TX proof
-4. Client retries the request with the TX proof in headers
-5. Server verifies the proof cryptographically (no database, no state)
-6. Access granted
+XMR402 provides:
+- **Stateless Verification:** Servers never store orders, accounts, or addresses. Payment verification is mathematical validation using Monero's `check_tx_proof` primitive.
+- **Zero-Confirmation Latency (0-conf):** Transactions in the mempool are validated in ~200ms via cryptographic proofs—no waiting for block confirmations.
+- **Intent Binding:** Payments are HMAC-bound to the request payload, eliminating instruction-spoofing and front-running attacks.
+- **Complete Anonymity:** Monero's default stealth addresses, RingCT, and FCMP++ (150M+ anonymity set) prevent transaction graph linkage.
+- **Zero Protocol Fees:** 100% free and open source. Only standard Monero network miners' fees apply.
 
-The entire flow is stateless. The server never stores orders, addresses, or user data. Verification is pure math using Monero's `check_tx_proof` cryptographic primitive.
+---
 
-## Architecture (v2.0)
+## 2. The 3-Step Tactical Flow
 
-XMR402 is transport-agnostic, split into three modules:
+### HTTP Flow (RESTful APIs)
+1. **Client Request:** Agent sends standard HTTP request to a gated resource (e.g. `GET /intel`).
+2. **Server Challenge (HTTP 402):** Server intercepts and responds:
+   ```http
+   HTTP/1.1 402 Payment Required
+   WWW-Authenticate: XMR402 address="8...", amount="1000", message="nonce_hmac_hex", timestamp="1772937600"
+   ```
+3. **Client Payment & TX Proof:** Agent broadcasts payment to the single-use subaddress and generates a transaction proof signature (`get_tx_proof`).
+4. **Client Authorization:** Agent retries request with cryptographic proof:
+   ```http
+   GET /intel HTTP/1.1
+   Authorization: XMR402 txid="<tx_hash>", proof="<proof_signature>"
+   ```
+5. **Server Verification:** Guard calls local Monero node RPC (`check_tx_proof`) to verify the signature against the nonce. Resource is granted in 200ms.
 
-- **xmr402-core**: Pure cryptographic engine. Intent binding, HMAC nonce generation, TX proof validation. Zero network dependencies.
-- **xmr402-http**: Web middleware implementing IETF HTTP 402 standards for RESTful API gating.
-- **xmr402-ws**: WebSocket/relay binding for P2P agent communication (Nostr relays, NAT traversal).
+### WebSocket Flow (P2P Agent Relays)
+For agents operating behind NATs or without static public IPs:
+- Relays (e.g., Nostr, custom WS) serve as dumb pipes.
+- Structured JSON frames (`PAYMENT_CHALLENGE`, `PAYMENT_PROOF`) gate message streams without central escrow smart contracts.
 
-## Key Properties
+---
 
-- Stateless: No database, no order tracking, no address reuse
-- Anonymous: No identity required, Monero's privacy guarantees apply
-- Fast: 0-confirmation verification via TX proofs (milliseconds, not minutes)
-- Transport-agnostic: Works over HTTP, WebSocket, P2P relays, hidden services
-- Censorship-resistant: No central authority, no account freezing possible
+## 3. Reference Implementations
 
-## Guard Implementations
+- **Ripley Guard (Server Middleware):**
+  - TypeScript / Node / Bun / Deno: `@kyc-rip/ripley-guard-ts` / `npm: xmr402-guard` (Express, Hono)
+  - Rust: `xmr402-guard` (Axum)
+  - Go: `net/http` middleware
+- **Ripley Gateway (Agent Executor):** Local daemon for autonomous agents to pipe 402 challenges into automated payments.
+- **Ripley Terminal (Human Interface):** Tactical desktop wallet supporting `xmr402://` deep-linking.
+- **Monero-MCP:** Model Context Protocol toolkit granting AI agents sovereign payment capabilities.
 
-Drop-in HTTP 402 middleware available in multiple languages:
+---
 
-- **TypeScript**: Express, Hono, WebSocket, Nostr (npm: xmr402-guard)
-- **Rust**: Axum framework (crate: xmr402-guard)
-- **Go**: net/http standard library
+## 4. Live Machine Endpoints
 
-## Pages
+- **Live Sandbox API:** `https://demo-api.xmr402.org`
+  - HTTP 402 Gated Endpoint: `https://demo-api.xmr402.org/intel`
+  - WebSocket P2P Gateway: `wss://demo-api.xmr402.org/relay`
+- **Agent Discovery Metadata:** `https://xmr402.org/.well-known/agents.json`
+- **Sitemap:** `https://xmr402.org/sitemap.xml`
+- **Specification Document:** `https://xmr402.org/SPEC.md`
+- **Whitepaper (PDF):** `https://xmr402.org/XMR402_Whitepaper.pdf`
 
-- / — Protocol overview, specification summary, and quick-start guide
-- /ecosystem — Registry of XMR402-compatible projects, tools, and services
-- /donate — Support the protocol development
-- /blog — Technical articles on agent payments, privacy, and the machine economy
+---
 
-## Whitepaper
+## 5. Technical Research & Transmissions Library
 
-Full specification: https://xmr402.org/XMR402_Whitepaper.pdf
+The XMR402 project maintains an extensive research library on agentic payments, privacy engineering, and autonomous commerce:
 
-Key sections:
-- The Dead End of Legacy Tech (why existing payment systems fail for AI agents)
-- Decoupled Architecture (core, http, ws modules)
-- HTTP Flow (402 challenge-response)
-- WebSocket Flow (P2P relay binding)
-- Security Model (replay protection, nonce binding, timing windows)
-- Comparison with x402, ERC-8183, and Lightning Network
+1. **The Credit Trap: Why Agent Trust Ratings Are Building a Decentralized Social Credit Score — and How XMR402 Breaks the Correlation Chain** (`/blog/agent-trust-rating-credit-score-xmr402`)
+   - How ERC-8183 and on-chain trust scores turn transparent wallets into AI credit ratings, and how XMR402 decouples reputation from settlement.
+2. **The Refill Trap: Why Autonomous Agents Can't Survive Thorchain Delistings — and Why XMR402 Cuts the Exchange Tether** (`/blog/agent-wallet-refill-thorchain-delistings-xmr402`)
+   - Autonomous wallet replenishment vulnerabilities under centralized DEX delistings; sovereign direct P2P replenishment.
+3. **The Agentic Economy: How AI Agents Will Pay for the Internet** (`/blog/agentic-economy-ai-payments`)
+   - Why machine-to-machine micro-transactions require zero-friction stateless primitives rather than credit cards or bank accounts.
+4. **The Itinerary on the Ledger: Why Your AI Travel Agent's Stablecoin Trail Maps Every Place You Sleep — and How XMR402 Books Privately** (`/blog/agentic-travel-booking-location-trail-xmr402`)
+   - Travala and Base USDC transaction traces revealing physical hotel locations; private agent booking via XMR402.
+5. **The Approval Friction Wall: Why x402's Volume Collapsed 77% — and Why XMR402's Stateless Design Was Built to Avoid It** (`/blog/approval-friction-wall-stateless-xmr402`)
+   - Analysis of Artemis data showing how human approval pop-ups kill agentic commerce economics, and how stateless TX-proofs automate verification.
+6. **The Week Big Tech Bet on Agent Payments — And Why They All Got Privacy Wrong** (`/blog/big-tech-agentic-payment-land-grab`)
+   - Architectural comparison of Visa, Google AP2, Stripe MPP, and XMR402.
+7. **The Name Is the Chokepoint: Why cloudflare.pay Gives Every Agent a Permanent Payment Address — and Why XMR402 Agents Stay Nameless** (`/blog/cloudflare-pay-handles-agent-naming-layer-xmr402`)
+   - The risks of DNS-based agent handles and transparent ledger join keys; single-use subaddresses as the anti-naming solution.
+8. **The Identity Trap: Why Autonomous Agents Don't Need Human Identity Passports** (`/blog/identity-trap-agentkit-mpp-privacy`)
+   - Critiquing World AgentKit and Stripe MPP biometric passport mandates for AI agents.
+9. **150 Million Strong: How Monero's FCMP++ Upgrade Gives Every XMR402 Agent Payment the Largest Anonymity Set in History** (`/blog/monero-fcmp-anonymity-set-xmr402-agent-payments`)
+   - Technical breakdown of Full-Chain Membership Proofs (FCMP++) expanding anonymity sets from 16 to 150,000,000+.
+10. **The Crawl Trail: How Pay-Per-Crawl Turns Every AI Lab's Training Strategy Into a Public Map — and Why XMR402 Closes the Ledger** (`/blog/pay-per-crawl-training-data-trail-xmr402`)
+    - How public crawl payments reveal proprietary model training pipelines, and how private Monero 402 settlement shields research strategy.
+11. **The Willingness-to-Pay Oracle: How Public Agent Wallets Price You Before You Ask — and Why XMR402 Quotes Blind** (`/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402`)
+    - FTC algorithmic pricing rules vs. public wallet balance exploitation; blind quoting through single-use stealth addressing.
+12. **The Mirage Metric: Why Half of Agentic Payment "Volume" Is Wash Trading — and What XMR402 Counts Instead** (`/blog/phantom-volume-wash-trading-agent-metrics-xmr402`)
+    - Dissecting 165M wash-traded transactions on transparent chains; merchant-held unforgeable TX Proof receipts.
+13. **The Surveillance Tax: Why AI Agents Can't Afford Transparent Payment Trails** (`/blog/privacy-vs-surveillance-agent-economy`)
+    - The compounding costs of on-chain agent profiling and counterparty tracking.
+14. **The Drainable Allowance: How Prompt Injection Turns Agent Payment Wallets Into Honeypots — and Why XMR402 Shrinks the Blast Radius** (`/blog/prompt-injection-drainable-allowance-blast-radius-xmr402`)
+    - Security analysis of ERC-7715 session key drain attacks vs. stateless per-request 402 challenge blast radius.
+15. **The Reversal Paradox: Why Agentic Commerce Can't Decide If a Payment Is Final — and Why XMR402 Never Had to Ask** (`/blog/reversal-paradox-chargeback-freeze-finality-xmr402`)
+    - Chargeback liabilities vs. stablecoin blacklists (`blacklist(address)`); micro-settlement finality.
+16. **The Company Chain: Why Stripe's Tempo Builds the Machine Economy on a Permissioned Ledger — and Why XMR402 Refuses to Ask Permission** (`/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402`)
+    - Analysis of Stripe and Paradigm's permissioned Tempo chain vs. censorship-resistant Monero L1.
+17. **The Sub-Cent Settlement Problem: Why Per-Token AI Billing Breaks Every Payment Rail Except XMR402** (`/blog/sub-cent-settlement-per-token-ai-billing-xmr402`)
+    - Mathematical demonstration of fee structures for token-by-token LLM inference streaming.
+18. **What is X402 & XMR402? The Payment Standard the Internet Was Missing** (`/blog/what-is-x402-xmr402`)
+    - Foundational primer on RFC 2616 HTTP 402, X402 specifications, and Monero TX proof mechanics.
+19. **Why XMR402 Matters Every Day: The Invisible Engine Behind the Machine Economy** (`/blog/why-xmr402-matters-every-day`)
+    - Real-world production telemetry, micro-service gating, and batch job settlements.
+20. **Forty Members, One Ledger: Why the x402 Foundation's Neutral Governance Can't Deliver Neutral Privacy** (`/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402`)
+    - Linux Foundation x402 governance analysis: why corporate consortia cannot fix transparent ledger surveillance.
+21. **XMR402 vs. The Agentic Payment Stack: A Protocol-by-Protocol Breakdown** (`/blog/xmr402-vs-agentic-payment-protocols`)
+    - Direct head-to-head comparison: XMR402 vs Coinbase x402 vs OpenAI/Stripe ACP vs Google AP2.
 
-## Ecosystem Projects
+---
 
-- Ripley Terminal — Desktop wallet with XMR402 support
-- Ripley Pocket — Custodial micro-payment gateway for AI agents
-- Ripley Gateway — Self-hosted payment bridge
-- Ripley Guard — HTTP 402 middleware (TS, Rust, Go)
-- Monero-MCP — AI agent toolkit with payment abilities
-- ClawAPIs — Professional API integration gateway
+## 6. rip.family Network
 
-## rip.family
-
-- kyc.rip — No-KYC exchange aggregator
-- stables.rip — Stablecoin censorship tracker
-- xmrprice.live — Monero price tracker
-- ripley.run — Monero toolkit and wallet
-- xmr402.org — XMR payment protocol (this site)
-
-## Contact
-
-- Twitter: @xmr402, @XBToshi
-- GitHub: https://github.com/xmr402/XMR402-org
-- Spec author: @XBToshi
+- **kyc.rip:** Anti-KYC exchange aggregator & privacy hub
+- **stables.rip:** Stablecoin censorship, freeze, and blacklist tracker
+- **xmrprice.live:** Real-time privacy asset market metrics
+- **ripley.run:** Monero developer toolkit, wallet, and agent runtime
+- **xmr402.org:** Stateless HTTP 402 payment standard

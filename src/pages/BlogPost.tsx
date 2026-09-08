@@ -57,26 +57,57 @@ export function BlogPost() {
     description: description || 'XMR402 Blog',
     ogImage: post?.coverImage || post?.ogImage,
     ogType: 'article',
-    canonicalUrl: post ? `https://xmr402.org/blog/${post.slug}` : undefined,
+    canonicalPath: post ? `/blog/${post.slug}` : '/blog',
+    keywords: post?.tags,
     jsonLd: post
       ? {
           '@context': 'https://schema.org',
-          '@type': 'BlogPosting',
-          headline: title,
-          description: description,
-          image: post.coverImage || post.ogImage,
-          datePublished: post.date,
-          dateModified: post.updatedAt ?? post.date,
-          author: { '@type': 'Person', name: post.author },
-          publisher: {
-            '@type': 'Organization',
-            name: 'XMR402',
-            url: 'https://xmr402.org',
-          },
-          mainEntityOfPage: {
-            '@type': 'WebPage',
-            '@id': `https://xmr402.org/blog/${post.slug}`,
-          },
+          '@graph': [
+            {
+              '@type': 'BlogPosting',
+              '@id': `https://xmr402.org/blog/${post.slug}#article`,
+              headline: title,
+              description: description,
+              image: post.coverImage || post.ogImage,
+              datePublished: post.date,
+              dateModified: post.updatedAt ?? post.date,
+              author: { '@type': 'Person', name: post.author },
+              publisher: {
+                '@type': 'Organization',
+                name: 'XMR402',
+                url: 'https://xmr402.org',
+                logo: 'https://xmr402.org/favicon.svg',
+              },
+              mainEntityOfPage: {
+                '@type': 'WebPage',
+                '@id': `https://xmr402.org/blog/${post.slug}`,
+              },
+              keywords: post.tags?.join(', '),
+            },
+            {
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://xmr402.org/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: 'Blog',
+                  item: 'https://xmr402.org/blog',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: title,
+                  item: `https://xmr402.org/blog/${post.slug}`,
+                },
+              ],
+            },
+          ],
         }
       : undefined,
   })

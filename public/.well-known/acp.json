@@ -1,0 +1,24 @@
+{
+  "protocol": {
+    "name": "acp",
+    "version": "1.0.0"
+  },
+  "api_base_url": "https://demo-api.xmr402.org",
+  "transports": [
+    "http",
+    "websocket"
+  ],
+  "capabilities": {
+    "services": [
+      "payments",
+      "proof-verification",
+      "challenge-generation",
+      "intel-feed"
+    ]
+  },
+  "endpoints": {
+    "challenge": "https://demo-api.xmr402.org/intel",
+    "verify": "https://demo-api.xmr402.org/intel",
+    "relay": "wss://demo-api.xmr402.org/relay"
+  }
+}

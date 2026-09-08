@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="The Name Is the Chokepoint — XMR402">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="55%" stop-color="#0d0d16"/>
+      <stop offset="100%" stop-color="#100b08"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6600"/>
+      <stop offset="100%" stop-color="#ffa14d"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ff6600" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ff6600" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#ff6600"/>
+    </marker>
+    <marker id="arrowDim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <ellipse cx="900" cy="470" rx="440" ry="300" fill="url(#glow)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#orange)"/>
+
+  <!-- eyebrow -->
+  <g transform="translate(72,86)">
+    <rect x="0" y="-24" width="10" height="34" rx="2" fill="#ff6600"/>
+    <text x="26" y="2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" letter-spacing="4" fill="#ff6600">XMR402 · THE NAMING LAYER</text>
+  </g>
+
+  <!-- title -->
+  <text x="72" y="182" font-family="Inter,Helvetica,Arial,sans-serif" font-size="62" font-weight="700" fill="#f5f5f7">The Name Is the</text>
+  <text x="72" y="252" font-family="Inter,Helvetica,Arial,sans-serif" font-size="62" font-weight="700" fill="#ff6600">Chokepoint</text>
+
+  <!-- subtitle -->
+  <text x="72" y="308" font-family="Inter,Helvetica,Arial,sans-serif" font-size="25" fill="#9aa0aa">Every resolvable handle is a place someone can say no.</text>
+
+  <!-- LEFT: named handle chain -->
+  <g transform="translate(72,368)">
+    <text x="0" y="0" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16" letter-spacing="2" fill="#6b7280">NAMED HANDLE</text>
+
+    <rect x="0" y="20" width="470" height="46" rx="8" fill="#14141d" stroke="#3a3a48"/>
+    <text x="18" y="49" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="18" fill="#c9ced6">agent.example.cloudflare.pay</text>
+
+    <line x1="235" y1="66" x2="235" y2="92" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowDim)"/>
+
+    <rect x="0" y="94" width="225" height="44" rx="8" fill="#14141d" stroke="#3a3a48"/>
+    <text x="18" y="121" font-family="Inter,Helvetica,Arial,sans-serif" font-size="17" fill="#9aa0aa">Registry / resolver</text>
+
+    <rect x="245" y="94" width="225" height="44" rx="8" fill="#2a1010" stroke="#ff4444"/>
+    <text x="263" y="121" font-family="Inter,Helvetica,Arial,sans-serif" font-size="17" fill="#ff8a8a">Revocable · seizable</text>
+
+    <line x1="235" y1="138" x2="235" y2="164" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowDim)"/>
+
+    <rect x="0" y="166" width="470" height="44" rx="8" fill="#14141d" stroke="#3a3a48"/>
+    <text x="18" y="193" font-family="Inter,Helvetica,Arial,sans-serif" font-size="17" fill="#9aa0aa">Public ledger entry, joined to a name — forever</text>
+  </g>
+
+  <!-- divider -->
+  <line x1="600" y1="360" x2="600" y2="600" stroke="#2a2a36" stroke-width="1" stroke-dasharray="5 7"/>
+
+  <!-- RIGHT: XMR402 -->
+  <g transform="translate(658,368)">
+    <text x="0" y="0" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16" letter-spacing="2" fill="#ff6600">XMR402</text>
+
+    <rect x="0" y="20" width="470" height="46" rx="8" fill="#1a1109" stroke="#ff6600" stroke-opacity="0.55"/>
+    <text x="18" y="49" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="18" fill="#ffc899">402 → one-time subaddress</text>
+
+    <line x1="235" y1="66" x2="235" y2="92" stroke="#ff6600" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="0" y="94" width="225" height="44" rx="8" fill="#1a1109" stroke="#ff6600" stroke-opacity="0.35"/>
+    <text x="18" y="121" font-family="Inter,Helvetica,Arial,sans-serif" font-size="17" fill="#e8b989">TX Proof, per request</text>
+
+    <rect x="245" y="94" width="225" height="44" rx="8" fill="#1a1109" stroke="#ff6600" stroke-opacity="0.35"/>
+    <text x="263" y="121" font-family="Inter,Helvetica,Arial,sans-serif" font-size="17" fill="#e8b989">~200ms · 0-conf</text>
+
+    <line x1="235" y1="138" x2="235" y2="164" stroke="#ff6600" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="0" y="166" width="470" height="44" rx="8" fill="#1a1109" stroke="#ff6600" stroke-opacity="0.55"/>
+    <text x="18" y="193" font-family="Inter,Helvetica,Arial,sans-serif" font-size="17" fill="#ffc899">No name · no account · nothing to revoke</text>
+  </g>
+
+  <!-- footer -->
+  <rect x="0" y="614" width="1200" height="16" fill="#0a0a0f"/>
+  <text x="72" y="600" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="17" fill="#5b6270">xmr402.org</text>
+  <text x="1128" y="600" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="17" fill="#5b6270">@xbtoshi · 2026-09-05</text>
+</svg>

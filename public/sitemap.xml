@@ -1,10 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <!-- English (default / bare paths) -->
   <url>
     <loc>https://xmr402.org/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru" />
@@ -15,6 +81,9 @@
   </url>
   <url>
     <loc>https://xmr402.org/ecosystem</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/ecosystem" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/ecosystem" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/ecosystem" />
@@ -24,19 +93,75 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/ecosystem" />
   </url>
   <url>
-    <loc>https://xmr402.org/donate</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/donate" />
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/donate" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/donate" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/donate" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/donate" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/donate" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/donate" />
+    <loc>https://xmr402.org/zh-TW/ecosystem</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/ecosystem" />
   </url>
-
-  <!-- Blog -->
+  <url>
+    <loc>https://xmr402.org/ru/ecosystem</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/ecosystem" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/ecosystem</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/ecosystem" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/ecosystem</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/ecosystem" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/ecosystem</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/ecosystem" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/ecosystem" />
+  </url>
   <url>
     <loc>https://xmr402.org/blog</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog" />
@@ -46,7 +171,1700 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog" />
   </url>
   <url>
+    <loc>https://xmr402.org/zh-TW/blog</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/donate</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/donate" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/donate" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/donate" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/donate" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/donate" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/donate" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/donate" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/donate</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/donate" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/donate" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/donate" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/donate" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/donate" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/donate" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/donate" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/donate</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/donate" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/donate" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/donate" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/donate" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/donate" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/donate" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/donate" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/donate</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/donate" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/donate" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/donate" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/donate" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/donate" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/donate" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/donate" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/donate</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/donate" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/donate" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/donate" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/donate" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/donate" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/donate" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/donate" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/donate</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/donate" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/donate" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/donate" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/donate" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/donate" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/donate" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/donate" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/agent-wallet-refill-thorchain-delistings-xmr402</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/agent-wallet-refill-thorchain-delistings-xmr402</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/agent-wallet-refill-thorchain-delistings-xmr402</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/agent-wallet-refill-thorchain-delistings-xmr402</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/agent-wallet-refill-thorchain-delistings-xmr402</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/agent-wallet-refill-thorchain-delistings-xmr402</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agent-wallet-refill-thorchain-delistings-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/personalized-pricing-agent-wallet-willingness-to-pay-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/phantom-volume-wash-trading-agent-metrics-xmr402</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/phantom-volume-wash-trading-agent-metrics-xmr402</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/phantom-volume-wash-trading-agent-metrics-xmr402</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/phantom-volume-wash-trading-agent-metrics-xmr402</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/phantom-volume-wash-trading-agent-metrics-xmr402</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/phantom-volume-wash-trading-agent-metrics-xmr402</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/phantom-volume-wash-trading-agent-metrics-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/cloudflare-pay-handles-agent-naming-layer-xmr402</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/cloudflare-pay-handles-agent-naming-layer-xmr402</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/cloudflare-pay-handles-agent-naming-layer-xmr402</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/cloudflare-pay-handles-agent-naming-layer-xmr402</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/cloudflare-pay-handles-agent-naming-layer-xmr402</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/cloudflare-pay-handles-agent-naming-layer-xmr402</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/cloudflare-pay-handles-agent-naming-layer-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/reversal-paradox-chargeback-freeze-finality-xmr402</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/reversal-paradox-chargeback-freeze-finality-xmr402</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/reversal-paradox-chargeback-freeze-finality-xmr402</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/reversal-paradox-chargeback-freeze-finality-xmr402</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/reversal-paradox-chargeback-freeze-finality-xmr402</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/reversal-paradox-chargeback-freeze-finality-xmr402</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/reversal-paradox-chargeback-freeze-finality-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/x402-foundation-neutral-governance-transparent-ledger-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/prompt-injection-drainable-allowance-blast-radius-xmr402</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/prompt-injection-drainable-allowance-blast-radius-xmr402</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/prompt-injection-drainable-allowance-blast-radius-xmr402</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/prompt-injection-drainable-allowance-blast-radius-xmr402</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/prompt-injection-drainable-allowance-blast-radius-xmr402</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/prompt-injection-drainable-allowance-blast-radius-xmr402</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/prompt-injection-drainable-allowance-blast-radius-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/agentic-travel-booking-location-trail-xmr402</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agentic-travel-booking-location-trail-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/agentic-travel-booking-location-trail-xmr402</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agentic-travel-booking-location-trail-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/agentic-travel-booking-location-trail-xmr402</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agentic-travel-booking-location-trail-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/agentic-travel-booking-location-trail-xmr402</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agentic-travel-booking-location-trail-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/agentic-travel-booking-location-trail-xmr402</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agentic-travel-booking-location-trail-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/agentic-travel-booking-location-trail-xmr402</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agentic-travel-booking-location-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agentic-travel-booking-location-trail-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/stripe-tempo-permissioned-chain-machine-economy-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/pay-per-crawl-training-data-trail-xmr402</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/pay-per-crawl-training-data-trail-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/pay-per-crawl-training-data-trail-xmr402</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/pay-per-crawl-training-data-trail-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/pay-per-crawl-training-data-trail-xmr402</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/pay-per-crawl-training-data-trail-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/pay-per-crawl-training-data-trail-xmr402</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/pay-per-crawl-training-data-trail-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/pay-per-crawl-training-data-trail-xmr402</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/pay-per-crawl-training-data-trail-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/pay-per-crawl-training-data-trail-xmr402</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/pay-per-crawl-training-data-trail-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/pay-per-crawl-training-data-trail-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/monero-fcmp-anonymity-set-xmr402-agent-payments</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/monero-fcmp-anonymity-set-xmr402-agent-payments</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/monero-fcmp-anonymity-set-xmr402-agent-payments</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/monero-fcmp-anonymity-set-xmr402-agent-payments</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/monero-fcmp-anonymity-set-xmr402-agent-payments</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/monero-fcmp-anonymity-set-xmr402-agent-payments</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/monero-fcmp-anonymity-set-xmr402-agent-payments" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/sub-cent-settlement-per-token-ai-billing-xmr402</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/sub-cent-settlement-per-token-ai-billing-xmr402</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/sub-cent-settlement-per-token-ai-billing-xmr402</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/sub-cent-settlement-per-token-ai-billing-xmr402</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/sub-cent-settlement-per-token-ai-billing-xmr402</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/sub-cent-settlement-per-token-ai-billing-xmr402</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/sub-cent-settlement-per-token-ai-billing-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/agent-trust-rating-credit-score-xmr402</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agent-trust-rating-credit-score-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/agent-trust-rating-credit-score-xmr402</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agent-trust-rating-credit-score-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/agent-trust-rating-credit-score-xmr402</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agent-trust-rating-credit-score-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/agent-trust-rating-credit-score-xmr402</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agent-trust-rating-credit-score-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/agent-trust-rating-credit-score-xmr402</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agent-trust-rating-credit-score-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/agent-trust-rating-credit-score-xmr402</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agent-trust-rating-credit-score-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agent-trust-rating-credit-score-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/approval-friction-wall-stateless-xmr402</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/approval-friction-wall-stateless-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/approval-friction-wall-stateless-xmr402</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/approval-friction-wall-stateless-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/approval-friction-wall-stateless-xmr402</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/approval-friction-wall-stateless-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/approval-friction-wall-stateless-xmr402</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/approval-friction-wall-stateless-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/approval-friction-wall-stateless-xmr402</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/approval-friction-wall-stateless-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/approval-friction-wall-stateless-xmr402</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/approval-friction-wall-stateless-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/approval-friction-wall-stateless-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/big-tech-agentic-payment-land-grab</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/big-tech-agentic-payment-land-grab" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/big-tech-agentic-payment-land-grab</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/big-tech-agentic-payment-land-grab" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/big-tech-agentic-payment-land-grab</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/big-tech-agentic-payment-land-grab" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/big-tech-agentic-payment-land-grab</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/big-tech-agentic-payment-land-grab" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/big-tech-agentic-payment-land-grab</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/big-tech-agentic-payment-land-grab" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/big-tech-agentic-payment-land-grab</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/big-tech-agentic-payment-land-grab" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/big-tech-agentic-payment-land-grab" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/identity-trap-agentkit-mpp-privacy</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/identity-trap-agentkit-mpp-privacy" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/identity-trap-agentkit-mpp-privacy</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/identity-trap-agentkit-mpp-privacy" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/identity-trap-agentkit-mpp-privacy</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/identity-trap-agentkit-mpp-privacy" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/identity-trap-agentkit-mpp-privacy</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/identity-trap-agentkit-mpp-privacy" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/identity-trap-agentkit-mpp-privacy</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/identity-trap-agentkit-mpp-privacy" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/identity-trap-agentkit-mpp-privacy</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/identity-trap-agentkit-mpp-privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/identity-trap-agentkit-mpp-privacy" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/privacy-vs-surveillance-agent-economy</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/privacy-vs-surveillance-agent-economy" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/privacy-vs-surveillance-agent-economy</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/privacy-vs-surveillance-agent-economy" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/privacy-vs-surveillance-agent-economy</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/privacy-vs-surveillance-agent-economy" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/privacy-vs-surveillance-agent-economy</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/privacy-vs-surveillance-agent-economy" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/privacy-vs-surveillance-agent-economy</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/privacy-vs-surveillance-agent-economy" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/privacy-vs-surveillance-agent-economy</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/privacy-vs-surveillance-agent-economy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/privacy-vs-surveillance-agent-economy" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/xmr402-vs-agentic-payment-protocols</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/xmr402-vs-agentic-payment-protocols" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/xmr402-vs-agentic-payment-protocols</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/xmr402-vs-agentic-payment-protocols" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/xmr402-vs-agentic-payment-protocols</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/xmr402-vs-agentic-payment-protocols" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/xmr402-vs-agentic-payment-protocols</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/xmr402-vs-agentic-payment-protocols" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/xmr402-vs-agentic-payment-protocols</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/xmr402-vs-agentic-payment-protocols" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/xmr402-vs-agentic-payment-protocols</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/xmr402-vs-agentic-payment-protocols" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/xmr402-vs-agentic-payment-protocols" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/blog/why-xmr402-matters-every-day</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/why-xmr402-matters-every-day" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/why-xmr402-matters-every-day</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/why-xmr402-matters-every-day" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/why-xmr402-matters-every-day</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/why-xmr402-matters-every-day" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/why-xmr402-matters-every-day</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/why-xmr402-matters-every-day" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/why-xmr402-matters-every-day</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/why-xmr402-matters-every-day" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/why-xmr402-matters-every-day</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/why-xmr402-matters-every-day" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/why-xmr402-matters-every-day" />
+  </url>
+  <url>
     <loc>https://xmr402.org/blog/what-is-x402-xmr402</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/what-is-x402-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/zh-TW/blog/what-is-x402-xmr402</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/what-is-x402-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ru/blog/what-is-x402-xmr402</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/what-is-x402-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/es/blog/what-is-x402-xmr402</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/what-is-x402-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/pt/blog/what-is-x402-xmr402</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/what-is-x402-xmr402" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/what-is-x402-xmr402" />
+  </url>
+  <url>
+    <loc>https://xmr402.org/ja/blog/what-is-x402-xmr402</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/what-is-x402-xmr402" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/what-is-x402-xmr402" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/what-is-x402-xmr402" />
@@ -57,6 +1875,9 @@
   </url>
   <url>
     <loc>https://xmr402.org/blog/agentic-economy-ai-payments</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agentic-economy-ai-payments" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agentic-economy-ai-payments" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agentic-economy-ai-payments" />
@@ -66,114 +1887,68 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agentic-economy-ai-payments" />
   </url>
   <url>
-    <loc>https://xmr402.org/blog/why-xmr402-matters-every-day</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/why-xmr402-matters-every-day" />
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/why-xmr402-matters-every-day" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/why-xmr402-matters-every-day" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/why-xmr402-matters-every-day" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/why-xmr402-matters-every-day" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/why-xmr402-matters-every-day" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/why-xmr402-matters-every-day" />
-  </url>
-
-  <!-- Traditional Chinese -->
-  <url>
-    <loc>https://xmr402.org/zh-TW</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/" />
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/" />
+    <loc>https://xmr402.org/zh-TW/blog/agentic-economy-ai-payments</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agentic-economy-ai-payments" />
   </url>
   <url>
-    <loc>https://xmr402.org/zh-TW/ecosystem</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/ecosystem" />
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/ecosystem" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/ecosystem" />
+    <loc>https://xmr402.org/ru/blog/agentic-economy-ai-payments</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agentic-economy-ai-payments" />
   </url>
   <url>
-    <loc>https://xmr402.org/zh-TW/donate</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/donate" />
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/donate" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/donate" />
-  </url>
-
-  <!-- Russian -->
-  <url>
-    <loc>https://xmr402.org/ru</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/" />
-  </url>
-  <url>
-    <loc>https://xmr402.org/ru/ecosystem</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/ecosystem" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/ecosystem" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/ecosystem" />
+    <loc>https://xmr402.org/es/blog/agentic-economy-ai-payments</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agentic-economy-ai-payments" />
   </url>
   <url>
-    <loc>https://xmr402.org/ru/donate</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/donate" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/donate" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/donate" />
-  </url>
-
-  <!-- Spanish -->
-  <url>
-    <loc>https://xmr402.org/es</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/" />
-  </url>
-  <url>
-    <loc>https://xmr402.org/es/ecosystem</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/ecosystem" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/ecosystem" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/ecosystem" />
+    <loc>https://xmr402.org/pt/blog/agentic-economy-ai-payments</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agentic-economy-ai-payments" />
   </url>
   <url>
-    <loc>https://xmr402.org/es/donate</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/donate" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/donate" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/donate" />
+    <loc>https://xmr402.org/ja/blog/agentic-economy-ai-payments</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://xmr402.org/zh-TW/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xmr402.org/ru/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://xmr402.org/es/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/blog/agentic-economy-ai-payments" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/blog/agentic-economy-ai-payments" />
   </url>
-
-  <!-- Portuguese -->
-  <url>
-    <loc>https://xmr402.org/pt</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/" />
-  </url>
-  <url>
-    <loc>https://xmr402.org/pt/ecosystem</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/ecosystem" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/ecosystem" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/ecosystem" />
-  </url>
-  <url>
-    <loc>https://xmr402.org/pt/donate</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/donate" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://xmr402.org/pt/donate" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/donate" />
-  </url>
-
-  <!-- Japanese -->
-  <url>
-    <loc>https://xmr402.org/ja</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/" />
-  </url>
-  <url>
-    <loc>https://xmr402.org/ja/ecosystem</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/ecosystem" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/ecosystem" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/ecosystem" />
-  </url>
-  <url>
-    <loc>https://xmr402.org/ja/donate</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xmr402.org/donate" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://xmr402.org/ja/donate" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://xmr402.org/donate" />
-  </url>
-
 </urlset>

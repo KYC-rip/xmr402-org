@@ -1,0 +1,19 @@
+{
+  "serverInfo": {
+    "name": "xmr402-mcp",
+    "version": "2.0.0"
+  },
+  "endpoint": "https://demo-api.xmr402.org/mcp",
+  "capabilities": {
+    "tools": {
+      "listChanged": true
+    },
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    },
+    "prompts": {
+      "listChanged": false
+    }
+  }
+}

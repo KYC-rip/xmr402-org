@@ -2,9 +2,18 @@ import { useState, useEffect } from 'react'
 import { Copy, Check } from 'lucide-react'
 import { useTranslation, Trans } from 'react-i18next'
 import QRCode from 'react-qr-code'
+import { useSEO } from '../hooks/useSEO'
 
 export function Donate() {
   const { t } = useTranslation()
+
+  useSEO({
+    title: t('seo.donate_title', 'Donate & Support | XMR402 Protocol'),
+    description: t('seo.donate_description', 'Support open-source development of XMR402 and sovereign, privacy-preserving infrastructure for the autonomous machine economy.'),
+    canonicalPath: '/donate',
+    keywords: ['Donate XMR402', 'Support Monero', 'Open-source Monero development', 'No-KYC payments fund'],
+  })
+
   const [copied, setCopied] = useState(false)
   const [xmrAddress, setXmrAddress] = useState<string>('82txTMTFiXihfBeJL5E6keb1p8pzGhdAMb1u6dwnCu66hBgP8orJSKAMuAMjg5HkaTaSTRUVDHo67WAv3FFjt4CW73b8scF') // Fallback
   const openAlias = 'donate.xmr402.org'

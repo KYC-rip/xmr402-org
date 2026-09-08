@@ -251,5 +251,15 @@
     "error_ws_json": "收到無效的 JSON 框架。",
     "frame_send": ">> 發送：",
     "frame_recv": "<< 接收："
+  },
+  "seo": {
+    "home_title": "XMR402 | AI 原生支付的戰術標準",
+    "home_description": "XMR402 是一個開放、中立的網際網路原生支付標準。透過零摩擦與極致隱私，實現客戶端與伺服器之間的代理微支付。",
+    "ecosystem_title": "生態系統 | XMR402 協議",
+    "ecosystem_description": "探索基於 XMR402 支付標準構建的工具、守衛中介軟體、網關和 AI 代理技能生態系統。",
+    "donate_title": "捐贈與支持 | XMR402 協議",
+    "donate_description": "支持 XMR402 的開源開發以及自主機器經濟的主權隱私保護基礎設施。",
+    "blog_title": "通訊與研究 | XMR402 部落格",
+    "blog_description": "關於自主代理支付、零確認門羅幣結算和監控資本主義的技術文章與協議分析。"
   }
 }

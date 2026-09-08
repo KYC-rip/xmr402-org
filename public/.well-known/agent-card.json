@@ -1,0 +1,41 @@
+{
+  "name": "XMR402 Payment Gateway Agent",
+  "version": "2.0.0",
+  "description": "Stateless, anonymous HTTP 402 Monero payment gateway for autonomous AI agents.",
+  "supportedInterfaces": [
+    {
+      "url": "https://demo-api.xmr402.org/intel",
+      "protocol": "HTTP/1.1",
+      "auth": "XMR402"
+    },
+    {
+      "url": "wss://demo-api.xmr402.org/relay",
+      "protocol": "WebSocket",
+      "auth": "XMR402"
+    }
+  ],
+  "capabilities": {
+    "streaming": true,
+    "stateless_validation": true,
+    "zero_confirmation": true
+  },
+  "skills": [
+    {
+      "id": "xmr402-payment-challenge",
+      "name": "XMR402 Challenge Handler",
+      "description": "Fulfills HTTP 402 Monero payment challenges via 0-conf TX Proof"
+    }
+  ],
+  "extensions": [
+    {
+      "uri": "https://github.com/google-agentic-commerce/AP2/tree/v0.1.0",
+      "required": true,
+      "params": {
+        "roles": [
+          "merchant",
+          "payment-processor"
+        ]
+      }
+    }
+  ]
+}

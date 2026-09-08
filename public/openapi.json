@@ -1,0 +1,75 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "XMR402 Sandbox Gateway API",
+    "description": "Stateless HTTP 402 payment gating standard for autonomous AI agents powered by Monero (XMR).",
+    "version": "2.0.0"
+  },
+  "x-service-info": {
+    "categories": ["ai", "security", "payments", "intelligence"],
+    "description": "Autonomous AI Agent Payment and Zero-Confirmation Verification Service"
+  },
+  "servers": [
+    {
+      "url": "https://demo-api.xmr402.org",
+      "description": "Production Sandbox"
+    }
+  ],
+  "paths": {
+    "/intel": {
+      "get": {
+        "summary": "Access protected intel resource",
+        "description": "Returns HTTP 402 Payment Required if no valid Monero TX proof is supplied. Re-submit with Authorization header containing txid and proof.",
+        "x-payment-info": {
+          "intent": "charge",
+          "method": "lightning",
+          "amount": 0.001,
+          "currency": "USD",
+          "description": "Access paywalled intelligence feed per request via XMR402 / Lightning challenge"
+        },
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Payment verified statelessly; access granted",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "string" },
+                    "data": { "type": "string" }
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment Required. Contains WWW-Authenticate challenge header.",
+            "headers": {
+              "WWW-Authenticate": {
+                "description": "XMR402 address=\"...\" amount=\"...\" message=\"...\" timestamp=\"...\"",
+                "schema": { "type": "string" }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": { "type": "string" },
+                    "protocol": { "type": "string" },
+                    "version": { "type": "string" },
+                    "address": { "type": "string" },
+                    "amount_atomic": { "type": "string" },
+                    "nonce": { "type": "string" },
+                    "timestamp": { "type": "integer" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
