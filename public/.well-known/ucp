@@ -1,4 +1,24 @@
 {
+  "ucp": {
+    "version": "2026-04-08",
+    "services": {
+      "dev.ucp.shopping": [
+        {
+          "transport": "rest",
+          "endpoint": "https://demo-api.xmr402.org/intel",
+          "version": "2026-04-08"
+        }
+      ]
+    },
+    "capabilities": {
+      "dev.ucp.shopping.checkout": [
+        {
+          "version": "2026-04-08",
+          "spec": "https://ucp.dev/specification/overview/"
+        }
+      ]
+    }
+  },
   "protocol_version": "1.0.0",
   "services": [
     {

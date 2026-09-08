@@ -473,6 +473,26 @@ Because XMR402 operates on an anonymous, stateless model, agents do not provisio
 
   if (path === '/.well-known/ucp') {
     const ucp = {
+      ucp: {
+        version: '2026-04-08',
+        services: {
+          'dev.ucp.shopping': [
+            {
+              transport: 'rest',
+              endpoint: 'https://demo-api.xmr402.org/intel',
+              version: '2026-04-08',
+            },
+          ],
+        },
+        capabilities: {
+          'dev.ucp.shopping.checkout': [
+            {
+              version: '2026-04-08',
+              spec: 'https://ucp.dev/specification/overview/',
+            },
+          ],
+        },
+      },
       protocol_version: '1.0.0',
       services: [
         {
@@ -535,6 +555,18 @@ Because XMR402 operates on an anonymous, stateless model, agents do not provisio
   // 1.5. x402 PAYMENT PROTOCOL MIDDLEWARE (HTTP 402 for /api and /api/v1)
   if (path === '/api' || path === '/api/' || path === '/api/v1' || path === '/api/v1/') {
     const challengeHeader = 'XMR402 address="82txTMTFiXihfBeJL5E6keb1p8pzGhdAMb1u6dwnCu66hBgP8orJSKAMuAMjg5HkaTaSTRUVDHo67WAv3FFjt4CW73b8scF", amount="1000", message="nonce_x402_challenge", timestamp="1772937600"';
+    const paymentRequiredObj = {
+      x402Version: 1,
+      version: '1.0',
+      scheme: 'exact',
+      network: 'monero',
+      address: '82txTMTFiXihfBeJL5E6keb1p8pzGhdAMb1u6dwnCu66hBgP8orJSKAMuAMjg5HkaTaSTRUVDHo67WAv3FFjt4CW73b8scF',
+      amount: '1000',
+      currency: 'XMR',
+      facilitator: 'https://demo-api.xmr402.org/intel',
+      description: 'XMR402 autonomous machine access challenge',
+    };
+    const b64 = btoa(JSON.stringify(paymentRequiredObj));
     const x402Response = {
       protocol: 'x402',
       version: '1.0',
@@ -552,10 +584,13 @@ Because XMR402 operates on an anonymous, stateless model, agents do not provisio
       headers: {
         'Content-Type': 'application/json; charset=utf-8',
         'WWW-Authenticate': challengeHeader,
+        'Payment-Required': b64,
+        'PAYMENT-REQUIRED': b64,
+        'x-payment-required': b64,
         'x402-facilitator': 'https://demo-api.xmr402.org/intel',
         'x402-wallet': '82txTMTFiXihfBeJL5E6keb1p8pzGhdAMb1u6dwnCu66hBgP8orJSKAMuAMjg5HkaTaSTRUVDHo67WAv3FFjt4CW73b8scF',
         'Access-Control-Allow-Origin': '*',
-        'Access-Control-Expose-Headers': 'WWW-Authenticate, x402-facilitator, x402-wallet',
+        'Access-Control-Expose-Headers': 'WWW-Authenticate, Payment-Required, PAYMENT-REQUIRED, x-payment-required, x402-facilitator, x402-wallet',
       },
     });
   }

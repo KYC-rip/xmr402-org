@@ -17,7 +17,20 @@
   "capabilities": {
     "streaming": true,
     "stateless_validation": true,
-    "zero_confirmation": true
+    "zero_confirmation": true,
+    "extensions": [
+      {
+        "uri": "https://github.com/google-agentic-commerce/AP2/tree/v0.1.0",
+        "description": "Agent Payments Protocol for cryptographically-signed payment mandates",
+        "required": true,
+        "params": {
+          "roles": [
+            "merchant",
+            "payment-processor"
+          ]
+        }
+      }
+    ]
   },
   "skills": [
     {
@@ -29,6 +42,7 @@
   "extensions": [
     {
       "uri": "https://github.com/google-agentic-commerce/AP2/tree/v0.1.0",
+      "description": "Agent Payments Protocol for cryptographically-signed payment mandates",
       "required": true,
       "params": {
         "roles": [
